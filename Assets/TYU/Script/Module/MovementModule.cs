@@ -6,8 +6,8 @@ public class MovementModule : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float dashPow;
-    [SerializeField] private TweenSettings<Vector2> dashTween;
-
+    /*[SerializeField] private TweenSettings<Vector2> dashTween;*/
+    
     private bool _canMove;
     private Rigidbody2D _rb;
     private Vector2 _curDir;
@@ -25,12 +25,13 @@ public class MovementModule : MonoBehaviour
     
     public void Dash()
     {
-        if (!_canMove) return;
+        /*if (!_canMove) return;
         Vector2 destination = (Vector2)_rb.transform.position + (_curDir * dashPow);
         dashTween.endValue = destination;
         Sequence.Create().ChainDelay(dashTween.settings.duration)
             .Group(Tween.RigidbodyMovePosition(_rb, dashTween))
             .ChainCallback(() => _canMove = true);
+            */
         
     }
 
