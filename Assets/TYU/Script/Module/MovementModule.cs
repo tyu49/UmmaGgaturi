@@ -7,7 +7,7 @@ public class MovementModule : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float dashPow;
     /*[SerializeField] private TweenSettings<Vector2> dashTween;*/
-    
+        
     private bool _canMove;
     private Rigidbody2D _rb;
     private Vector2 _curDir;
