@@ -6,4 +6,9 @@ public class AppPosDataSO : ScriptableObject
 {
     [field: SerializeField] public List<Vector2> positions { get; private set; }
 
+
+    public void add(Vector2 d)
+    {
+        positions.Add(d);
+    }
 }
