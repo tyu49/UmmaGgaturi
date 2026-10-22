@@ -14,7 +14,7 @@ public class fdsdsffds : MonoBehaviour
         foreach (var adf in ssddfs)
         {
             adf.SetParent(ca.transform);
-            // data.add(adf.anchoredPosition);
+            data.add(adf.anchoredPosition);
         }
     }
 }
