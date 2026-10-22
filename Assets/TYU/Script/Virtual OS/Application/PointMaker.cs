@@ -7,12 +7,13 @@ public class PointMaker : MonoBehaviour
     
     
     [ContextMenu("MakePoints")]
-    public void MakePositions()
+    public void MakePositions(Transform parentTrm)
     {
         foreach (var pos in pointPosData.positions)
         {
-            GameObject ob = Instantiate(pointPrefab, transform);
+            GameObject ob = Instantiate(pointPrefab, parentTrm);
             ob.GetComponent<RectTransform>().anchoredPosition = pos;
+            
         }
     }
         
