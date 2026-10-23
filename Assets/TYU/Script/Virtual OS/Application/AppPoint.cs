@@ -16,11 +16,14 @@ namespace TYU.Script.Virtual_OS.Application
             _rtTrm = transform as RectTransform;
         }
 
-        public void Put(Application appData)
+        public bool Put(Application appData)
         {
-            if (_curApp != null) return;
+            if (_curApp != null) return false;
             appData.trm.anchoredPosition = _rtTrm.anchoredPosition;
             _curApp = appData;
+            return true;
         }
+
+        public void RemoveMyApp() => _curApp = null;
     }
 }

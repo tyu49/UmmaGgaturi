@@ -54,7 +54,7 @@ namespace TYU.Script.Virtual_OS.Application
             _isOn = false;
             AppPoint targetPoint = TryCatchPoint();
             if (targetPoint != null)
-                targetPoint.Put(_data);
+                _data.TryChangePos(targetPoint);
             _data = null;
             gameObject.SetActive(false);
         }

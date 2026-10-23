@@ -24,6 +24,8 @@ namespace TYU.Script.Virtual_OS.Application
         private void OnEnable()
         {
             trm = transform as RectTransform;
+            _img = GetComponentInChildren<Image>();
+            _text = GetComponentInChildren<TextMeshProUGUI>();
         }
 
         public void Initialize(ApplicationSO data, AppPoint point, ApplicationManager manager)
@@ -33,8 +35,20 @@ namespace TYU.Script.Virtual_OS.Application
             _img.sprite = data.icon;
             _text.SetText(data.name);
         }
-
+        
         public void StartMove() => _manager.appMover.StartMove(this);
         public void EndMove() => _manager.appMover.TryMove();
+        public void ClickAction()
+        {
+            // if(_lastClickTime + _clickDelay < Time.time) 이때 호출
+            _lastClickTime = Time.time;
+        }
+
+        public void TryChangePos(AppPoint point)
+        {
+            if (!point.Put(this)) return;
+            _curPoint.RemoveMyApp();
+            _curPoint = point;
+        }
     }
 }
