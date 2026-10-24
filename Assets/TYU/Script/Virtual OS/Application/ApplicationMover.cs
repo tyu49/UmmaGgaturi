@@ -10,7 +10,7 @@ namespace TYU.Script.Virtual_OS.Application
     {
         [SerializeField] private Vector2 size;
         [SerializeField] private ContactFilter2D target;
-        
+        [SerializeField] private bool debug;
         private Image _img;
         private TextMeshProUGUI _text;
         private Application _data;
@@ -26,14 +26,15 @@ namespace TYU.Script.Virtual_OS.Application
         public void Initialize(Canvas parentCanvas)
         {
             _myCvs = parentCanvas;
-            
+            _img = GetComponentInChildren<Image>();
+            _text = GetComponentInChildren<TextMeshProUGUI>();
+            _rtTrm= transform as RectTransform;
             
             gameObject.SetActive(false);
         }
         
         public void ChangeVisual()
         {
-            _rtTrm= transform as RectTransform;
             _img.sprite = _data.myData.icon;
             _text.SetText(_data.myData.name);
             
@@ -88,6 +89,13 @@ namespace TYU.Script.Virtual_OS.Application
             }
 
             return targetPoint;
+        }
+
+        private void OnDrawGizmos()
+        {
+            if (!debug) return;
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireCube(transform.position, size);
         }
     }
 }

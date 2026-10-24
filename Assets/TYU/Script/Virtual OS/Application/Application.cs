@@ -11,29 +11,30 @@ namespace TYU.Script.Virtual_OS.Application
         public ApplicationSO myData { get; private set; }
         public RectTransform trm { get; private set; }
         private Image _img;
+        private Image _backGround;
         private TextMeshProUGUI _text;
         private AppPoint _curPoint;
         private ApplicationManager _manager;
         private float _clickDelay = 0.6f;
         private float _lastClickTime = 0f;
+        private bool _isClicked;
 
         //trigger event 써서 Up Down으로 누르고 때고 판단 하면 와! 개쌀먹 ㄴㅇㅅ
         //더블 클릭도 걍 ㅣㅅ간 재서 trigger로 클릭 두번 판단해서 시간 안에 했음녀 창 호출하도록 해야지ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ
         // 개쌀먹이다ㅏㅏㅏㅏㅏㅏㅏ
-        
-        private void OnEnable()
+        public void Initialize(ApplicationSO data, AppPoint point, ApplicationManager manager)
         {
             trm = transform as RectTransform;
             _img = GetComponentInChildren<Image>();
+            _backGround = GetComponent<Image>();
             _text = GetComponentInChildren<TextMeshProUGUI>();
-        }
-
-        public void Initialize(ApplicationSO data, AppPoint point, ApplicationManager manager)
-        {
             _manager = manager;
             myData = data;
             _img.sprite = data.icon;
             _text.SetText(data.name);
+            gameObject.name = data.name;
+            point.Put(this);
+            _curPoint = point;
         }
         
         public void StartMove() => _manager.appMover.StartMove(this);
@@ -42,13 +43,15 @@ namespace TYU.Script.Virtual_OS.Application
         {
             // if(_lastClickTime + _clickDelay < Time.time) 이때 호출
             _lastClickTime = Time.time;
+            _isClicked = true;
         }
 
-        public void TryChangePos(AppPoint point)
+        public bool TryChangePos(AppPoint point)
         {
-            if (!point.Put(this)) return;
+            if (!point.Put(this)) return false;
             _curPoint.RemoveMyApp();
             _curPoint = point;
+            return true;
         }
     }
 }
