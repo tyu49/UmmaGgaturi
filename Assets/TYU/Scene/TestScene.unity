@@ -523,7 +523,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 791005825460556157}
   m_Father: {fileID: 2065061504}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -590,7 +591,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
   m_UseReflectionProbes: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -937,7 +938,6 @@ RectTransform:
   - {fileID: 1168397334}
   - {fileID: 1894732189}
   - {fileID: 1121817419}
-  - {fileID: 791005825460556157}
   - {fileID: 1802303845}
   m_Father: {fileID: 1802386526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1021,7 +1021,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 2065061504}
+    m_TransformParent: {fileID: 1168397334}
     m_Modifications:
     - target: {fileID: 1645597973607235466, guid: 05965b59746f8a944908baae1b13b0ca, type: 3}
       propertyPath: m_Name
@@ -1089,11 +1089,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6230205003068975126, guid: 05965b59746f8a944908baae1b13b0ca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -349
+      value: -149
       objectReference: {fileID: 0}
     - target: {fileID: 6230205003068975126, guid: 05965b59746f8a944908baae1b13b0ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 8
+      value: -52
       objectReference: {fileID: 0}
     - target: {fileID: 6230205003068975126, guid: 05965b59746f8a944908baae1b13b0ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
