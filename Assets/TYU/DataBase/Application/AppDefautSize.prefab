@@ -140,7 +140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'dfa
+  m_text: 'Test
 
 '
   m_isRightToLeft: 0
@@ -224,7 +224,6 @@ GameObject:
   m_Component:
   - component: {fileID: 791005824077031380}
   - component: {fileID: 1319450918924818331}
-  - component: {fileID: 2921354105536050110}
   m_Layer: 5
   m_Name: AppDefautSize
   m_TagString: Untagged
@@ -261,15 +260,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6403460055511837471}
   m_CullTransparentMesh: 1
---- !u!114 &2921354105536050110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6403460055511837471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 633d0fb0f8484f53a60e4af76453dfdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TYU.Script.Virtual_OS.Application.Application

@@ -9,7 +9,7 @@ namespace TYU.Script.Virtual_OS.Application
         private Canvas _myCanvas;
         private RectTransform _rtTrm;
 
-        private void Initialize(Canvas canvas)
+        public void Initialize(Canvas canvas)
         {
             curApp = null;
             _myCanvas = canvas;

@@ -7,14 +7,16 @@ public class PointMaker : MonoBehaviour
     [SerializeField] private GameObject pointPrefab;
     [SerializeField] private AppPosDataSO pointPosData;
 
-    public List<AppPoint> MakePositions(Transform parentTrm)
+    public List<AppPoint> MakePositions(Canvas cvs)
     {
         var result = new List<AppPoint>(pointPosData.positions.Count);
         foreach (var pos in pointPosData.positions)
         {
-            GameObject ob = Instantiate(pointPrefab, parentTrm);
+            GameObject ob = Instantiate(pointPrefab, cvs.transform);
             ob.GetComponent<RectTransform>().anchoredPosition = pos;
-            result.Add(ob.GetComponent<AppPoint>());
+            var point = ob.GetComponent<AppPoint>();
+            point.Initialize(cvs);
+            result.Add(point);
         }
 
         return result;

@@ -43,6 +43,7 @@ namespace TYU.Script.Virtual_OS.Application
         public void StartMove(Application data)
         {
             _beforePos = GetMousePosInCanvas.GetPos(_myCvs);
+            _rtTrm.anchoredPosition = data.trm.anchoredPosition;
             _data = data;
             ChangeVisual();
             gameObject.SetActive(true);
@@ -65,14 +66,14 @@ namespace TYU.Script.Virtual_OS.Application
             if (_isOn)
             {
                 Vector2 curPos = GetMousePosInCanvas.GetPos(_myCvs);
-                _rtTrm.anchoredPosition += _beforePos - curPos;
+                _rtTrm.anchoredPosition -= _beforePos - curPos;
                 _beforePos = curPos;
             }
         }
 
         private AppPoint TryCatchPoint()
         {
-            int cnt = Physics2D.OverlapBox((Vector2)_rtTrm.position, size, 0f, target, _resultArray);
+            int cnt = Physics2D.OverlapBox(_rtTrm.position, size, 0f, target, _resultArray);
             if (cnt < 1) return null;
             AppPoint targetPoint = null;
             float minDistance = float.MaxValue;

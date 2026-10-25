@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using NUnit.Framework.Internal;
 using UnityEngine;
 
 namespace TYU.Script.Virtual_OS.Application
@@ -10,13 +11,15 @@ namespace TYU.Script.Virtual_OS.Application
         [SerializeField] private Canvas applicationCanvas;
         [SerializeField] private GameObject appBase;
         [field : SerializeField] public ApplicationMover appMover { get; private set; }
+        [SerializeField] private ApplicationSO testSo;
         private PointMaker _pointMaker;
         private List<AppPoint> _points;
 
         private void Awake()
         {
             _pointMaker = GetComponentInChildren<PointMaker>();
-            _points = _pointMaker.MakePositions(pointCanvas.transform);
+            _points = _pointMaker.MakePositions(pointCanvas);
+            appMover.Initialize(applicationCanvas);
         }
 
         private void TryMakeApplication(ApplicationSO data)
@@ -31,5 +34,8 @@ namespace TYU.Script.Virtual_OS.Application
                 }
             }
         }
+
+        [ContextMenu("test")]
+        public void tets() => TryMakeApplication(testSo);
     }
 }
