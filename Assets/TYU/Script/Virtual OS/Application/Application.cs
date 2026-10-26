@@ -7,12 +7,13 @@ namespace TYU.Script.Virtual_OS.Application
 {
     public class Application : MonoBehaviour
     {
-
         public ApplicationSO myData { get; private set; }
         public RectTransform trm { get; private set; }
-        private Image _img;
-        private Image _backGround;
-        private TextMeshProUGUI _text;
+        [SerializeField] private Image img;
+        [SerializeField] private Image backGround;
+        [SerializeField] private TextMeshProUGUI text;
+        [SerializeField] private Color selectColor;
+        [SerializeField] private Color clickColor;
         private AppPoint _curPoint;
         private ApplicationManager _manager;
         private float _clickDelay = 0.6f;
@@ -25,33 +26,47 @@ namespace TYU.Script.Virtual_OS.Application
         public void Initialize(ApplicationSO data, AppPoint point, ApplicationManager manager)
         {
             trm = transform as RectTransform;
-            _img = GetComponentInChildren<Image>();
-            _backGround = GetComponent<Image>();
-            _text = GetComponentInChildren<TextMeshProUGUI>();
             _manager = manager;
             myData = data;
-            _img.sprite = data.icon;
-            _text.SetText(data.name);
+            img.sprite = data.icon;
+            text.SetText(data.name);
             gameObject.name = data.name;
             point.Put(this);
             _curPoint = point;
+            _manager.clickAction += ClickServer;
         }
+
+        public void MouseEnter() => backGround.color = selectColor;
+        public void MouseExit() => backGround.color = _isClicked ? clickColor : new Color(1, 1, 1, 0);
         
         public void StartMove() => _manager.appMover.StartMove(this);
         public void EndMove() => _manager.appMover.TryMove();
+
         public void ClickAction()
         {
             // if(_lastClickTime + _clickDelay < Time.time) 이때 호출
             _lastClickTime = Time.time;
-            _isClicked = true;
+            _manager.ClickAction(this);
         }
 
-        public bool TryChangePos(AppPoint point)
+        private void ClickServer(Application data)
         {
-            if (!point.Put(this)) return false;
+            _isClicked = data == this;
+            if (!_isClicked)
+                backGround.color = new Color(1, 1, 1, 0);
+        }
+
+        public void TryChangePos(AppPoint point)
+        {
+            if (!point.Put(this)) return;
             _curPoint.RemoveMyApp();
             _curPoint = point;
-            return true;
+        }
+
+        private void OnDestroy()
+        {
+            if (_manager == null) return;
+            _manager.clickAction -= ClickServer;
         }
     }
 }

@@ -9,12 +9,14 @@ namespace TYU.Script.Virtual_OS.Application
     {
         [SerializeField] private Canvas pointCanvas;
         [SerializeField] private Canvas applicationCanvas;
-        [SerializeField] private GameObject appBase;
+        [SerializeField] private Application appBase;
         [field : SerializeField] public ApplicationMover appMover { get; private set; }
         [SerializeField] private ApplicationSO testSo;
         private PointMaker _pointMaker;
         private List<AppPoint> _points;
 
+        public event Action<Application> clickAction;
+        
         private void Awake()
         {
             _pointMaker = GetComponentInChildren<PointMaker>();
@@ -24,18 +26,34 @@ namespace TYU.Script.Virtual_OS.Application
 
         private void TryMakeApplication(ApplicationSO data)
         {
-            foreach (var point in _points)
+            for (int x = 0; x < 18; ++x)
             {
-                if (point.curApp == null)
+                bool isEnd = false;
+                for (int y = 0; y < 10; ++y)
                 {
-                    var newApp = Instantiate(appBase, applicationCanvas.transform).GetComponent<Application>();
-                    newApp.Initialize(data, point, this);
-                    break;
+                    var point = _points[x + y*18];
+                    if (point.curApp == null)
+                    {
+                        
+                        var newApp = Instantiate(appBase, applicationCanvas.transform).GetComponent<Application>();
+                        newApp.Initialize(data, point, this);
+                        isEnd = true;
+                        break;
+                    }
                 }
+
+                if (isEnd) break;
             }
         }
 
         [ContextMenu("test")]
         public void tets() => TryMakeApplication(testSo);
+
+        public void ClickAction(Application caller = null)
+        {
+            if (caller == null)
+                caller = new Application();
+            clickAction?.Invoke(caller);
+        }
     }
 }
