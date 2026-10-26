@@ -30,7 +30,7 @@ namespace SUNFISHH.Scripts
             if (_isMaxClick)
             {
                 _curRectSize = _rectTransform.sizeDelta;
-                _curTransform = _rectTransform.position;
+                _curTransform = _rectTransform.anchoredPosition;
                 
                 _rectTransform.anchorMin = Vector2.zero;
                 _rectTransform.anchorMax = Vector2.one;
@@ -42,7 +42,7 @@ namespace SUNFISHH.Scripts
                 _rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
                 _rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
                 _rectTransform.sizeDelta = _curRectSize;
-                _rectTransform.position = _curTransform;
+                _rectTransform.anchoredPosition = _curTransform;
 
             }
                 
