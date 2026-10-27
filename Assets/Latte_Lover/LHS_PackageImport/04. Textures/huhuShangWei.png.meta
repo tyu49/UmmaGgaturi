@@ -1,0 +1,1991 @@
+fileFormatVersion: 2
+guid: d4110b3034854c94c80a87b5f02d30e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3992319869947217135
+    second: huhuShangWei_0
+  - first:
+      213: -8705804161810049298
+    second: huhuShangWei_1
+  - first:
+      213: 7155990299021848235
+    second: huhuShangWei_2
+  - first:
+      213: 531586156607436181
+    second: huhuShangWei_3
+  - first:
+      213: -874962328742088827
+    second: huhuShangWei_4
+  - first:
+      213: 6371828282086265847
+    second: huhuShangWei_5
+  - first:
+      213: -4327808117043801282
+    second: huhuShangWei_6
+  - first:
+      213: 23973805985314575
+    second: huhuShangWei_7
+  - first:
+      213: 1647121709143665651
+    second: huhuShangWei_8
+  - first:
+      213: -329918497627613628
+    second: huhuShangWei_9
+  - first:
+      213: -6767972048540627852
+    second: huhuShangWei_10
+  - first:
+      213: 8812147349710899592
+    second: huhuShangWei_11
+  - first:
+      213: 5173329238636181370
+    second: huhuShangWei_12
+  - first:
+      213: -7864644454589934646
+    second: huhuShangWei_13
+  - first:
+      213: 4233047231806142087
+    second: huhuShangWei_14
+  - first:
+      213: 388170666650499326
+    second: huhuShangWei_15
+  - first:
+      213: 6387692396998203059
+    second: huhuShangWei_16
+  - first:
+      213: -6845489783445887199
+    second: huhuShangWei_17
+  - first:
+      213: 2088429944177778651
+    second: huhuShangWei_18
+  - first:
+      213: -8867914193473840116
+    second: huhuShangWei_19
+  - first:
+      213: 3374023941735823986
+    second: huhuShangWei_20
+  - first:
+      213: -4948924508358923490
+    second: huhuShangWei_21
+  - first:
+      213: 6782307232027816984
+    second: huhuShangWei_22
+  - first:
+      213: 7406432856685973497
+    second: huhuShangWei_23
+  - first:
+      213: 1934340493215980420
+    second: huhuShangWei_24
+  - first:
+      213: -3654437349329046375
+    second: huhuShangWei_25
+  - first:
+      213: 1374467026689874306
+    second: huhuShangWei_26
+  - first:
+      213: 1681221808973229076
+    second: huhuShangWei_27
+  - first:
+      213: 3375413403464174551
+    second: huhuShangWei_28
+  - first:
+      213: -2331566992241762165
+    second: huhuShangWei_29
+  - first:
+      213: 5720483091652373176
+    second: huhuShangWei_30
+  - first:
+      213: -6101937264630973469
+    second: huhuShangWei_31
+  - first:
+      213: -8910383665338519562
+    second: huhuShangWei_32
+  - first:
+      213: 1234868475462920326
+    second: huhuShangWei_33
+  - first:
+      213: -8482267428093987948
+    second: huhuShangWei_34
+  - first:
+      213: 5068308805823162012
+    second: huhuShangWei_35
+  - first:
+      213: -3394815567358636548
+    second: huhuShangWei_36
+  - first:
+      213: 4527858139637339551
+    second: huhuShangWei_37
+  - first:
+      213: -4814483598833311794
+    second: huhuShangWei_38
+  - first:
+      213: 5943254439283606857
+    second: huhuShangWei_39
+  - first:
+      213: -4812665805911070875
+    second: huhuShangWei_40
+  - first:
+      213: 8695679774226620998
+    second: huhuShangWei_41
+  - first:
+      213: 8659811900653695217
+    second: huhuShangWei_42
+  - first:
+      213: -534659240603642785
+    second: huhuShangWei_43
+  - first:
+      213: 426723118242464440
+    second: huhuShangWei_44
+  - first:
+      213: 1049523832408374650
+    second: huhuShangWei_45
+  - first:
+      213: -7436272056336456053
+    second: huhuShangWei_46
+  - first:
+      213: -4570693187993905631
+    second: huhuShangWei_47
+  - first:
+      213: 4888653357140197431
+    second: huhuShangWei_48
+  - first:
+      213: 3922015869211238825
+    second: huhuShangWei_49
+  - first:
+      213: -3041009055965870574
+    second: huhuShangWei_50
+  - first:
+      213: -4539461379227665400
+    second: huhuShangWei_51
+  - first:
+      213: -4505496674374592226
+    second: huhuShangWei_52
+  - first:
+      213: -8923542052019167046
+    second: huhuShangWei_53
+  - first:
+      213: -6243485396811137301
+    second: huhuShangWei_54
+  - first:
+      213: -2924745965625530401
+    second: huhuShangWei_55
+  - first:
+      213: -6858239221645027847
+    second: huhuShangWei_56
+  - first:
+      213: 2025528820132807187
+    second: huhuShangWei_57
+  - first:
+      213: 2164647381434224515
+    second: huhuShangWei_58
+  - first:
+      213: 2191483749107714381
+    second: huhuShangWei_59
+  - first:
+      213: 1801601635145724483
+    second: huhuShangWei_60
+  - first:
+      213: -6366301602062995124
+    second: huhuShangWei_61
+  - first:
+      213: -5387045983716230674
+    second: huhuShangWei_62
+  - first:
+      213: -1232201180288530488
+    second: huhuShangWei_63
+  - first:
+      213: 6062876514773087005
+    second: huhuShangWei_64
+  - first:
+      213: -6946586836677086280
+    second: huhuShangWei_65
+  - first:
+      213: 252683245339796005
+    second: huhuShangWei_66
+  - first:
+      213: 2803286280330132675
+    second: huhuShangWei_67
+  - first:
+      213: -421317315442458536
+    second: huhuShangWei_68
+  - first:
+      213: -8104811805512034785
+    second: huhuShangWei_69
+  - first:
+      213: -2889394859338627965
+    second: huhuShangWei_70
+  - first:
+      213: 1921566766527263127
+    second: huhuShangWei_71
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: huhuShangWei_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 403
+        width: 2044
+        height: 1381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe400fdf4c1976730800000000000000
+      internalID: 3992319869947217135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_1
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 1758
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6d13b7d35ce2780800000000000000
+      internalID: -8705804161810049298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_2
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1767
+        width: 58
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baea65d434f2f4360800000000000000
+      internalID: 7155990299021848235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_3
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1745
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595f9100bc2906700800000000000000
+      internalID: 531586156607436181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_4
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 1721
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58faa73d5628bd3f0800000000000000
+      internalID: -874962328742088827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_5
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 1734
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f31a8b20184d6850800000000000000
+      internalID: 6371828282086265847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_6
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1745
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e335d8f727980f3c0800000000000000
+      internalID: -4327808117043801282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_7
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 1728
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f073badac0c255000800000000000000
+      internalID: 23973805985314575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_8
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 1717
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fba757b770cbd610800000000000000
+      internalID: 1647121709143665651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_9
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1681
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4465318dfd4eb6bf0800000000000000
+      internalID: -329918497627613628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_10
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1678
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c86f4b7455312a0800000000000000
+      internalID: -6767972048540627852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_11
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1704
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8890be763590b4a70800000000000000
+      internalID: 8812147349710899592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_12
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1690
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a773d07788b5bc740800000000000000
+      internalID: 5173329238636181370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_13
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 1686
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3db67898b2bd290800000000000000
+      internalID: -7864644454589934646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_14
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 1669
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7867149970eceba30800000000000000
+      internalID: 4233047231806142087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_15
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 1594
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef8fde92a2f036500800000000000000
+      internalID: 388170666650499326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_16
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 1632
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b69a814464a5a850800000000000000
+      internalID: 6387692396998203059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_17
+      rect:
+        serializedVersion: 2
+        x: 2054
+        y: 1479
+        width: 124
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12764289f4feff0a0800000000000000
+      internalID: -6845489783445887199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_18
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 1575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf510128f79bfc10800000000000000
+      internalID: 2088429944177778651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_19
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 1537
+        width: 35
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0cd8577607dee480800000000000000
+      internalID: -8867914193473840116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_20
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1328
+        width: 197
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ab3de06e0f2de20800000000000000
+      internalID: 3374023941735823986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_21
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 1465
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1baa035163e15bb0800000000000000
+      internalID: -4948924508358923490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_22
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1246
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814b49a4e789f1e50800000000000000
+      internalID: 6782307232027816984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_23
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 1212
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ff8c83317fe8c660800000000000000
+      internalID: 7406432856685973497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_24
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1162
+        width: 108
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48bdac41e6828da10800000000000000
+      internalID: 1934340493215980420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_25
+      rect:
+        serializedVersion: 2
+        x: 2374
+        y: 1048
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9947253c794d84dc0800000000000000
+      internalID: -3654437349329046375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_26
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1010
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28956518a76131310800000000000000
+      internalID: 1374467026689874306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_27
+      rect:
+        serializedVersion: 2
+        x: 2222
+        y: 875
+        width: 91
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c2d78e356e45710800000000000000
+      internalID: 1681221808973229076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_28
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 854
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db03935b90e7de20800000000000000
+      internalID: 3375413403464174551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_29
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 844
+        width: 72
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8067697c2c94afd0800000000000000
+      internalID: -2331566992241762165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_30
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 811
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba619d301d336f40800000000000000
+      internalID: 5720483091652373176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_31
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 854
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ebb3f32360915ba0800000000000000
+      internalID: -6101937264630973469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_32
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 736
+        width: 52
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ffed0ff345f75480800000000000000
+      internalID: -8910383665338519562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_33
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 733
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688ab48f552232110800000000000000
+      internalID: 1234868475462920326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_34
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 746
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493779217bee84a80800000000000000
+      internalID: -8482267428093987948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_35
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 774
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96e21f7100465640800000000000000
+      internalID: 5068308805823162012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_36
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 770
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd4f9d5a3133e0d0800000000000000
+      internalID: -3394815567358636548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_37
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 784
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95d1760dfe26de30800000000000000
+      internalID: 4527858139637339551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_38
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 774
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf9892dca48f2db0800000000000000
+      internalID: -4814483598833311794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_39
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 750
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945434f7c6eaa7250800000000000000
+      internalID: 5943254439283606857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_40
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 763
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5676008b2f9f53db0800000000000000
+      internalID: -4812665805911070875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_41
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 607
+        width: 121
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642a357dea24da870800000000000000
+      internalID: 8695679774226620998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_42
+      rect:
+        serializedVersion: 2
+        x: 2126
+        y: 746
+        width: 24
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0f920ca05dd2870800000000000000
+      internalID: 8659811900653695217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_43
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 736
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5490ffd0428498f0800000000000000
+      internalID: -534659240603642785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_44
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 690
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b20a484a660ce500800000000000000
+      internalID: 426723118242464440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_45
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 691
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7df10e6d58a09e00800000000000000
+      internalID: 1049523832408374650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_46
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 690
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86e6ecb6fd0dc890800000000000000
+      internalID: -7436272056336456053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_47
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 685
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126535813c2a190c0800000000000000
+      internalID: -4570693187993905631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_48
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 676
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730cc5eb35cf7d340800000000000000
+      internalID: 4888653357140197431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_49
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 691
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a1e7cf37accd6630800000000000000
+      internalID: 3922015869211238825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_50
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 645
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2168864206a2cc5d0800000000000000
+      internalID: -3041009055965870574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_51
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 659
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80cb78b3de79001c0800000000000000
+      internalID: -4539461379227665400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_52
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 647
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19d23355a24971c0800000000000000
+      internalID: -4505496674374592226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_53
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 652
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0232b58c5392480800000000000000
+      internalID: -8923542052019167046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_54
+      rect:
+        serializedVersion: 2
+        x: 2284
+        y: 659
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beebbba6c1faa59a0800000000000000
+      internalID: -6243485396811137301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_55
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 618
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd722ac4a073967d0800000000000000
+      internalID: -2924745965625530401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_56
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 613
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f55231b3c3a2d0a0800000000000000
+      internalID: -6858239221645027847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_57
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 613
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312055eeabf1c1c10800000000000000
+      internalID: 2025528820132807187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_58
+      rect:
+        serializedVersion: 2
+        x: 2003
+        y: 625
+        width: 41
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38fcd5a135f5a0e10800000000000000
+      internalID: 2164647381434224515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_59
+      rect:
+        serializedVersion: 2
+        x: 2301
+        y: 618
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d494b9cdbd6b96e10800000000000000
+      internalID: 2191483749107714381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_60
+      rect:
+        serializedVersion: 2
+        x: 2347
+        y: 621
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342bf915423900910800000000000000
+      internalID: 1801601635145724483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_61
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 608
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41f80c4c6a56a7a0800000000000000
+      internalID: -6366301602062995124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_62
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 604
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee936e7383e5d35b0800000000000000
+      internalID: -5387045983716230674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_63
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 548
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c7c5151e8756eee0800000000000000
+      internalID: -1232201180288530488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_64
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 551
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13bb14511aa32450800000000000000
+      internalID: 6062876514773087005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_65
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 489
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3357e9314c89f90800000000000000
+      internalID: -6946586836677086280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_66
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 332
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 522eb27a216b18300800000000000000
+      internalID: 252683245339796005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_67
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 0
+        width: 201
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ccbdcef40647e620800000000000000
+      internalID: 2803286280330132675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_68
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 66
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850c453422e272af0800000000000000
+      internalID: -421317315442458536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_69
+      rect:
+        serializedVersion: 2
+        x: 2277
+        y: 42
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f161011aa9ce58f80800000000000000
+      internalID: -8104811805512034785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_70
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 42
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38408412faec6e7d0800000000000000
+      internalID: -2889394859338627965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huhuShangWei_71
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 71
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791bd031bc6caaa10800000000000000
+      internalID: 1921566766527263127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      huhuShangWei_0: 3992319869947217135
+      huhuShangWei_1: -8705804161810049298
+      huhuShangWei_10: -6767972048540627852
+      huhuShangWei_11: 8812147349710899592
+      huhuShangWei_12: 5173329238636181370
+      huhuShangWei_13: -7864644454589934646
+      huhuShangWei_14: 4233047231806142087
+      huhuShangWei_15: 388170666650499326
+      huhuShangWei_16: 6387692396998203059
+      huhuShangWei_17: -6845489783445887199
+      huhuShangWei_18: 2088429944177778651
+      huhuShangWei_19: -8867914193473840116
+      huhuShangWei_2: 7155990299021848235
+      huhuShangWei_20: 3374023941735823986
+      huhuShangWei_21: -4948924508358923490
+      huhuShangWei_22: 6782307232027816984
+      huhuShangWei_23: 7406432856685973497
+      huhuShangWei_24: 1934340493215980420
+      huhuShangWei_25: -3654437349329046375
+      huhuShangWei_26: 1374467026689874306
+      huhuShangWei_27: 1681221808973229076
+      huhuShangWei_28: 3375413403464174551
+      huhuShangWei_29: -2331566992241762165
+      huhuShangWei_3: 531586156607436181
+      huhuShangWei_30: 5720483091652373176
+      huhuShangWei_31: -6101937264630973469
+      huhuShangWei_32: -8910383665338519562
+      huhuShangWei_33: 1234868475462920326
+      huhuShangWei_34: -8482267428093987948
+      huhuShangWei_35: 5068308805823162012
+      huhuShangWei_36: -3394815567358636548
+      huhuShangWei_37: 4527858139637339551
+      huhuShangWei_38: -4814483598833311794
+      huhuShangWei_39: 5943254439283606857
+      huhuShangWei_4: -874962328742088827
+      huhuShangWei_40: -4812665805911070875
+      huhuShangWei_41: 8695679774226620998
+      huhuShangWei_42: 8659811900653695217
+      huhuShangWei_43: -534659240603642785
+      huhuShangWei_44: 426723118242464440
+      huhuShangWei_45: 1049523832408374650
+      huhuShangWei_46: -7436272056336456053
+      huhuShangWei_47: -4570693187993905631
+      huhuShangWei_48: 4888653357140197431
+      huhuShangWei_49: 3922015869211238825
+      huhuShangWei_5: 6371828282086265847
+      huhuShangWei_50: -3041009055965870574
+      huhuShangWei_51: -4539461379227665400
+      huhuShangWei_52: -4505496674374592226
+      huhuShangWei_53: -8923542052019167046
+      huhuShangWei_54: -6243485396811137301
+      huhuShangWei_55: -2924745965625530401
+      huhuShangWei_56: -6858239221645027847
+      huhuShangWei_57: 2025528820132807187
+      huhuShangWei_58: 2164647381434224515
+      huhuShangWei_59: 2191483749107714381
+      huhuShangWei_6: -4327808117043801282
+      huhuShangWei_60: 1801601635145724483
+      huhuShangWei_61: -6366301602062995124
+      huhuShangWei_62: -5387045983716230674
+      huhuShangWei_63: -1232201180288530488
+      huhuShangWei_64: 6062876514773087005
+      huhuShangWei_65: -6946586836677086280
+      huhuShangWei_66: 252683245339796005
+      huhuShangWei_67: 2803286280330132675
+      huhuShangWei_68: -421317315442458536
+      huhuShangWei_69: -8104811805512034785
+      huhuShangWei_7: 23973805985314575
+      huhuShangWei_70: -2889394859338627965
+      huhuShangWei_71: 1921566766527263127
+      huhuShangWei_8: 1647121709143665651
+      huhuShangWei_9: -329918497627613628
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

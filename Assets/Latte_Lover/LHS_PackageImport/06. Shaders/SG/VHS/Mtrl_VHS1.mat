@@ -63,11 +63,11 @@ Material:
     - _InterferenceStrength: 0.2
     - _LineFrequency: 10.26
     - _LineStrength: 0.17
-    - _LineThreshold: 0.64
+    - _LineThreshold: 0.6
     - _LineWidth: 0.005
     - _NoiseScale: 400
     - _NoiseSpeed: 15
-    - _NoiseStrength: 0.12
+    - _NoiseStrength: -0.67
     - _Opacity: 0.35
     - _QueueControl: 0
     - _QueueOffset: 0
