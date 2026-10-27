@@ -5,6 +5,7 @@ namespace SUNFISHH.Scripts
 {
     public abstract class AbstractWindow : MonoBehaviour
     {
+        
         private RectTransform _rectTransform;
         private bool _isMaxClick;
         
@@ -22,7 +23,7 @@ namespace SUNFISHH.Scripts
             gameObject.SetActive(false);
         }
 
-        // 전체 화면
+        // 전체 화면 (개쌀먹 ㅋㅋㅋㅋ)
         public void MaxWindow()
         {
             _isMaxClick = !_isMaxClick;
