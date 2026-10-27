@@ -9,6 +9,7 @@ namespace TYU.Script.Virtual_OS.Application
     {
         [SerializeField] private Canvas pointCanvas;
         [SerializeField] private Canvas applicationCanvas;
+        [SerializeField] private Canvas taskBarCanvas;
         [SerializeField] private Application appBase;
         [field : SerializeField] public ApplicationMover appMover { get; private set; }
         [SerializeField] private ApplicationSO testSo;
