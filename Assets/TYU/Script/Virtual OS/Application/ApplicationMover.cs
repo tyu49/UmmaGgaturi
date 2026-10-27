@@ -1,4 +1,5 @@
 ﻿using System;
+using PrimeTween;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,8 +12,8 @@ namespace TYU.Script.Virtual_OS.Application
         [SerializeField] private Vector2 size;
         [SerializeField] private ContactFilter2D target;
         [SerializeField] private bool debug;
-        private Image _img;
-        private TextMeshProUGUI _text;
+        [SerializeField]private Image img;
+        [SerializeField]private TextMeshProUGUI text;
         private Application _data;
         private RectTransform _rtTrm;
         private Canvas _myCvs;
@@ -26,18 +27,15 @@ namespace TYU.Script.Virtual_OS.Application
         public void Initialize(Canvas parentCanvas)
         {
             _myCvs = parentCanvas;
-            _img = GetComponentInChildren<Image>();
-            _text = GetComponentInChildren<TextMeshProUGUI>();
             _rtTrm= transform as RectTransform;
             
             gameObject.SetActive(false);
         }
         
-        public void ChangeVisual()
+        private void ChangeVisual()
         {
-            _img.sprite = _data.myData.icon;
-            _text.SetText(_data.myData.name);
-            
+            img.sprite = _data.myData.Icon;
+            text.SetText(_data.myData.Name);
         }
 
         public void StartMove(Application data)
