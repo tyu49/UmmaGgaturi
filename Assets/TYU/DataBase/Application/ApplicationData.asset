@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bcc0013b17d44e4841920d0fa08e205, type: 3}
   m_Name: ApplicationData
   m_EditorClassIdentifier: Assembly-CSharp::TYU.Script.Virtual_OS.Application.ApplicationSO
-  <icon>k__BackingField: {fileID: -6851021286988673050, guid: b57d813e6ffac0a46814616931424ce3, type: 3}
-  <name>k__BackingField: test
+  <Icon>k__BackingField: {fileID: 21300000, guid: b292d46130c3788469ff3a16535a0167, type: 3}
+  <Name>k__BackingField: dfgsdgs
+  <Window>k__BackingField: {fileID: 0}

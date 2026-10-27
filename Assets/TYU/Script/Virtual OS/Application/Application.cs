@@ -1,4 +1,5 @@
 ﻿using System;
+using SUNFISHH.Scripts;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,6 +21,8 @@ namespace TYU.Script.Virtual_OS.Application
         private float _lastClickTime = 0f;
         private bool _isClicked;
 
+        private AbstractWindow _myWindow;
+        //대충 여기다가 나중에 추상화 클래스로 창을 프로퍼티로 넣으셈
         //trigger event 써서 Up Down으로 누르고 때고 판단 하면 와! 개쌀먹 ㄴㅇㅅ
         //더블 클릭도 걍 ㅣㅅ간 재서 trigger로 클릭 두번 판단해서 시간 안에 했음녀 창 호출하도록 해야지ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ
         // 개쌀먹이다ㅏㅏㅏㅏㅏㅏㅏ
@@ -28,11 +31,12 @@ namespace TYU.Script.Virtual_OS.Application
             trm = transform as RectTransform;
             _manager = manager;
             myData = data;
-            img.sprite = data.icon;
-            text.SetText(data.name);
-            gameObject.name = data.name;
+            img.sprite = data.Icon;
+            text.SetText(data.Name);
+            gameObject.name = data.Name;
             point.Put(this);
             _curPoint = point;
+            // _myWindow = data.Window.GetComponent<AbstractWindow>();
             _manager.clickAction += ClickServer;
         }
 
@@ -44,9 +48,11 @@ namespace TYU.Script.Virtual_OS.Application
 
         public void ClickAction()
         {
-            // if(_lastClickTime + _clickDelay < Time.time) 이때 호출
-            _lastClickTime = Time.time;
             _manager.ClickAction(this);
+            if (myData == null) return;
+            // if(_lastClickTime + _clickDelay < Time.time)
+            //이때 _myWindow에서 창 호출하는거 하면 됌
+            _lastClickTime = Time.time;
         }
 
         private void ClickServer(Application data)
