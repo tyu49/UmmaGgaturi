@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6bcc0013b17d44e4841920d0fa08e205, type: 3}
-  m_Name: ApplicationData
+  m_Name: TestData 2
   m_EditorClassIdentifier: Assembly-CSharp::TYU.Script.Virtual_OS.Application.ApplicationSO
-  <Icon>k__BackingField: {fileID: 21300000, guid: b292d46130c3788469ff3a16535a0167, type: 3}
-  <Name>k__BackingField: dfgsdgs
+  <Icon>k__BackingField: {fileID: 21300000, guid: f6ccef7f725d215489dd52b49a95cf4a, type: 3}
+  <Name>k__BackingField: Blue dye
   <Window>k__BackingField: {fileID: 0}
+  <LockInTaskBar>k__BackingField: 0

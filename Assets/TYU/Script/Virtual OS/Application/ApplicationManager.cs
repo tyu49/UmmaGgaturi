@@ -51,8 +51,6 @@ namespace TYU.Script.Virtual_OS.Application
 
         public void ClickAction(Application caller = null)
         {
-            if (caller == null)
-                caller = new Application();
             clickAction?.Invoke(caller);
         }
     }
