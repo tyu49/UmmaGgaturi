@@ -846,7 +846,7 @@ GameObject:
   - component: {fileID: 773376635}
   - component: {fileID: 773376634}
   - component: {fileID: 773376633}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1112,7 +1112,7 @@ GameObject:
   - component: {fileID: 1048695268}
   - component: {fileID: 1048695270}
   - component: {fileID: 1048695269}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Particle System (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4414,7 +4414,7 @@ GameObject:
   - component: {fileID: 1497440096}
   - component: {fileID: 1497440095}
   - component: {fileID: 1497440094}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: RingParticle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6812,7 +6812,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 256
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 4134f2f939267f440af000d8a3ddd1c3, type: 2}
   m_TargetDisplay: 0
@@ -6855,7 +6855,7 @@ GameObject:
   - component: {fileID: 1745987478}
   - component: {fileID: 1745987480}
   - component: {fileID: 1745987479}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6931,7 +6931,7 @@ GameObject:
   - component: {fileID: 1804276799}
   - component: {fileID: 1804276798}
   - component: {fileID: 1804276797}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: EffectMaskCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7409,7 +7409,7 @@ Camera:
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 128
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 4fb8b4c6eef34a9498b0137763bb8c65, type: 2}
   m_TargetDisplay: 0
@@ -7688,6 +7688,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 193778051441579238, guid: b0be0ffee1efa574c80f976a5a12e648, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1272735341606295210, guid: b0be0ffee1efa574c80f976a5a12e648, type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -7735,6 +7739,10 @@ PrefabInstance:
     - target: {fileID: 4358867441178558475, guid: b0be0ffee1efa574c80f976a5a12e648, type: 3}
       propertyPath: m_Name
       value: RingParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358867441178558475, guid: b0be0ffee1efa574c80f976a5a12e648, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4358867441178558475, guid: b0be0ffee1efa574c80f976a5a12e648, type: 3}
       propertyPath: m_IsActive
