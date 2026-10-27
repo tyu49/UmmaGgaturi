@@ -20,6 +20,7 @@ namespace TYU.Script.Virtual_OS.Application
         private float _clickDelay = 0.6f;
         private float _lastClickTime = 0f;
         private bool _isClicked;
+        private ApplicationMover _mover;
 
         private AbstractWindow _myWindow;
         //대충 여기다가 나중에 추상화 클래스로 창을 프로퍼티로 넣으셈
@@ -30,6 +31,7 @@ namespace TYU.Script.Virtual_OS.Application
         {
             trm = transform as RectTransform;
             _manager = manager;
+            _mover = _manager.appMover;
             myData = data;
             img.sprite = data.Icon;
             text.SetText(data.Name);
@@ -43,8 +45,8 @@ namespace TYU.Script.Virtual_OS.Application
         public void MouseEnter() => backGround.color = selectColor;
         public void MouseExit() => backGround.color = _isClicked ? clickColor : new Color(1, 1, 1, 0);
         
-        public void StartMove() => _manager.appMover.StartMove(this);
-        public void EndMove() => _manager.appMover.TryMove();
+        public void StartMove() => _mover.StartMove(this);
+        public void EndMove() => _mover.TryMove();
 
         public void ClickAction()
         {

@@ -1,6 +1,7 @@
 ﻿using System;
 using PrimeTween;
 using TMPro;
+using TYU.Script.Module;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -20,6 +21,8 @@ namespace TYU.Script.Virtual_OS.Application
         private bool _isOn;
         private Collider2D[] _resultArray = new Collider2D[8];
         private Vector2 _beforePos;
+
+        private UIDragMovementModule _mvMd;
         //OnMouseClick 에서 Canceled가 됐을 떄 bool값을 false로 해서 위치 변경 취소 -> 개머저리 그냥 쌩고생 하는 거임 이거 완전
         
         //mouse의 위치 변화를 Update로 기록 해서 이동한 만큼 똑같이 Mover도 움직이면 되나? 아마도 되지 않을까
@@ -28,7 +31,7 @@ namespace TYU.Script.Virtual_OS.Application
         {
             _myCvs = parentCanvas;
             _rtTrm= transform as RectTransform;
-            
+            _mvMd = new UIDragMovementModule(_rtTrm, _myCvs);
             gameObject.SetActive(false);
         }
         
@@ -45,13 +48,13 @@ namespace TYU.Script.Virtual_OS.Application
             _data = data;
             ChangeVisual();
             gameObject.SetActive(true);
-            _isOn = true;
+            _mvMd.StartMove();
         }
 
         public void TryMove()
         {
             
-            _isOn = false;
+            _mvMd.StopMove();
             AppPoint targetPoint = TryCatchPoint();
             if (targetPoint != null)
                 _data.TryChangePos(targetPoint);
@@ -61,12 +64,7 @@ namespace TYU.Script.Virtual_OS.Application
 
         private void Update()
         {
-            if (_isOn)
-            {
-                Vector2 curPos = GetMousePosInCanvas.GetPos(_myCvs);
-                _rtTrm.anchoredPosition -= _beforePos - curPos;
-                _beforePos = curPos;
-            }
+            _mvMd.UseModule();
         }
 
         private AppPoint TryCatchPoint()
