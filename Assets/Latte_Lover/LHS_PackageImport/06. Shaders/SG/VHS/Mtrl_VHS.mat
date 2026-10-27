@@ -43,19 +43,19 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _FlickerSpeed: 60
-    - _FlickerStrength: 0.03
-    - _InterferenceDensity: 2563
+    - _FlickerSpeed: 0.77
+    - _FlickerStrength: 0.05
+    - _InterferenceDensity: -61.7
     - _InterferenceSpeed: 2
-    - _InterferenceStrength: 0.2
+    - _InterferenceStrength: 0.07
     - _NoiseScale: 400
-    - _NoiseSpeed: 15
-    - _NoiseStrength: 0.2
+    - _NoiseSpeed: 5.2
+    - _NoiseStrength: 0.92
     - _Opacity: 0.21
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _ScanlineDensity: 10.1
-    - _ScanlineStrength: 0.07
+    - _ScanlineDensity: 1.1
+    - _ScanlineStrength: -2.19
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -65,7 +65,7 @@ Material:
     - _UIMaskSoftnessY: 1
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
-    - _TintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TintColor: {r: 0.79559743, g: 0.8382175, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &4404420032915301854
