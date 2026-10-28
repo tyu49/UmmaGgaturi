@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using NUnit.Framework.Internal;
+using TYU.Script.Virtual_OS.TaskBar;
 using UnityEngine;
 
 namespace TYU.Script.Virtual_OS.Application
@@ -9,10 +10,10 @@ namespace TYU.Script.Virtual_OS.Application
     {
         [SerializeField] private Canvas pointCanvas;
         [SerializeField] private Canvas applicationCanvas;
-        [SerializeField] private Canvas taskBarCanvas;
         [SerializeField] private Application appBase;
         [field : SerializeField] public ApplicationMover appMover { get; private set; }
         [SerializeField] private ApplicationSO testSo;
+        [SerializeField] private TaskBarManager tBManager;
         private PointMaker _pointMaker;
         private List<AppPoint> _points;
 
@@ -23,6 +24,7 @@ namespace TYU.Script.Virtual_OS.Application
             _pointMaker = GetComponentInChildren<PointMaker>();
             _points = _pointMaker.MakePositions(pointCanvas);
             appMover.Initialize(applicationCanvas);
+            tBManager.Initialize();
         }
 
         private void TryMakeApplication(ApplicationSO data)
@@ -45,6 +47,7 @@ namespace TYU.Script.Virtual_OS.Application
 
                 if (isEnd) break;
             }
+            tBManager.MakeNewApp(data);
         }
 
         [ContextMenu("test")]
