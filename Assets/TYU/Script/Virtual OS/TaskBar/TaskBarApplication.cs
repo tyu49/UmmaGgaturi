@@ -1,6 +1,7 @@
 ﻿using PrimeTween;
 using TYU.Script.Virtual_OS.Application;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace TYU.Script.Virtual_OS.TaskBar
@@ -47,7 +48,32 @@ namespace TYU.Script.Virtual_OS.TaskBar
             return point;
         }
 
-        public void StartMove() => _mover.StartMove(this);
-        public void EndMove() => _mover.StopMove();
+        // public void StartMove() => _mover.StartMove(this);
+        // public void EndMove() => _mover.StopMove();
+
+        public void ClickApp()
+        {
+            if (_mover.isMoved) return;
+            Debug.Log(1);
+        }
+        private void Update()
+        {
+            if(Mouse.current.leftButton.wasPressedThisFrame)
+                CheckCanDrag(true);
+            if(Mouse.current.leftButton.wasReleasedThisFrame)
+                CheckCanDrag(false);
+        }
+
+        private void CheckCanDrag(bool isClick)
+        {
+            if(!isClick)
+            {
+                _mover.StopMove();
+                return;
+            }
+            
+            if(RectTransformUtility.RectangleContainsScreenPoint(_rtTrm, Mouse.current.position.ReadValue()))
+                _mover.StartMove(this);
+        }
     }
 }
