@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.016692162, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.015686154, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1909,7 +1909,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 384, y: 30}
+  m_AnchoredPosition: {x: 340, y: -10}
   m_SizeDelta: {x: 850, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895190136
@@ -1962,7 +1962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4c611ff085467d885d07eeeafccd6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SUNFISHH.Scripts.TestWindow
-  dragTrs: {fileID: 76480198}
+  dragRange: {fileID: 76480198}
   duration: 0.05
   minWin:
     startFromCurrent: 0

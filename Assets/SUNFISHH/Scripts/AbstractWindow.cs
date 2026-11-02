@@ -2,6 +2,7 @@
 using PrimeTween;
 using TMPro;
 using TYU.Script.Module;
+using TYU.Script.Virtual_OS.TaskBar;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -11,13 +12,15 @@ namespace SUNFISHH.Scripts
     public abstract class AbstractWindow : MonoBehaviour
     {
         [Header("Window Settings")] 
+        private Canvas _canvas;
+        private TaskBarApplication _taskBarApplication;
         
         [Header("Drag Settings")]
         // [SerializeField] private Vector2 dragSize;
-        [SerializeField] private RectTransform dragTrs;
-        private Canvas _canvas;
+        [SerializeField] private RectTransform dragRange;
         private UIDragMovementModule _dragMovementModule;
         
+        [Header("Max Settings")]
         private RectTransform _rectTransform;
         private Image _image;
         private bool _isMaxClick;
@@ -25,7 +28,7 @@ namespace SUNFISHH.Scripts
         private Vector2 _srtSize;
         private Vector2 _curTransform;
         private Vector2 _curRectSize;
-
+        
         #region primeTween
         [SerializeField] private float duration = 0.05f;
         
@@ -52,6 +55,11 @@ namespace SUNFISHH.Scripts
         
         #endregion
 
+        public void Init(TaskBarApplication taskBar)
+        {
+            _taskBarApplication = taskBar;
+        }
+        
         private void Awake()
         {
             _rectTransform = GetComponent<RectTransform>();
@@ -65,10 +73,13 @@ namespace SUNFISHH.Scripts
 
         private void Update()
         {
-            if(Mouse.current.leftButton.isPressed)
+            if (Mouse.current.leftButton.wasPressedThisFrame)
                 CheckCanDrag(true);
+
             if(Mouse.current.leftButton.wasReleasedThisFrame)
                 CheckCanDrag(false);
+            
+            _dragMovementModule.UseModule();
         }
 
         private void CheckCanDrag(bool isClick)
@@ -79,8 +90,11 @@ namespace SUNFISHH.Scripts
                 return;
             }
             
-            if(RectTransformUtility.RectangleContainsScreenPoint(dragTrs, Mouse.current.position.ReadValue()))
+            if (RectTransformUtility.RectangleContainsScreenPoint(dragRange, Mouse.current.position.ReadValue()))
+            {
                 _dragMovementModule.StartMove();
+            }
+            
         }
 
         #region 최소화
@@ -89,6 +103,9 @@ namespace SUNFISHH.Scripts
         // 주의 : _curRectSize만큼 커지기
         public void MinWindow()
         {
+            if(_taskBarApplication == null) return;
+            var pos = _taskBarApplication.GetPos(_canvas);
+                
             gameObject.SetActive(false);
         }
 
@@ -107,7 +124,7 @@ namespace SUNFISHH.Scripts
             
             if (_isMaxClick)
             {
-                dragTrs.gameObject.SetActive(false);
+                dragRange.gameObject.SetActive(false);
                 _curRectSize = _rectTransform.sizeDelta;
                 _curTransform = _rectTransform.anchoredPosition;
 
@@ -145,7 +162,7 @@ namespace SUNFISHH.Scripts
                 Tween.UIAnchoredPosition(_rectTransform, closePos);
                 Tween.UISizeDelta(_rectTransform, closeDelta);
                 
-                dragTrs.gameObject.SetActive(true);
+                dragRange.gameObject.SetActive(true);
             }
                 
         }
@@ -178,9 +195,8 @@ namespace SUNFISHH.Scripts
             closeWin.settings.duration = duration;
             closeWin.startValue = curSize;
             closeWin.endValue = new Vector2(curSize.x /2, curSize.y /2);
-            
-            Tween.UISizeDelta(_rectTransform, closeWin);
-            gameObject.SetActive(false); // 바로 false되어서 애니메이션 안나옴. 시퀀스로 수정해야함 
+
+            Tween.UISizeDelta(_rectTransform, closeWin).OnComplete(() => gameObject.SetActive(false));
         }
 
         #endregion
