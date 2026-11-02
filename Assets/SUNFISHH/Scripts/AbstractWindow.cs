@@ -14,6 +14,7 @@ namespace SUNFISHH.Scripts
         [Header("Window Settings")] 
         private Canvas _canvas;
         private TaskBarApplication _taskBarApplication;
+        private bool _isOpen;
         
         [Header("Drag Settings")]
         // [SerializeField] private Vector2 dragSize;
@@ -58,6 +59,11 @@ namespace SUNFISHH.Scripts
         public void Init(TaskBarApplication taskBar)
         {
             _taskBarApplication = taskBar;
+        }
+
+        public void OpenCheck(bool value)
+        {
+            _isOpen = value;
         }
         
         private void Awake()
