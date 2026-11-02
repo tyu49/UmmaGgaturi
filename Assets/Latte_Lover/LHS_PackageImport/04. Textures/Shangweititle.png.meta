@@ -1,0 +1,2069 @@
+fileFormatVersion: 2
+guid: 3a67f596c7a1def46a2851ac263e6b8e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1697630330384992005
+    second: Shangweititle_0
+  - first:
+      213: -1656066639757865465
+    second: Shangweititle_1
+  - first:
+      213: 5069427505472761712
+    second: Shangweititle_2
+  - first:
+      213: 8437763959138884266
+    second: Shangweititle_3
+  - first:
+      213: 6330850134698856502
+    second: Shangweititle_4
+  - first:
+      213: -8159651999855537079
+    second: Shangweititle_5
+  - first:
+      213: -1450848855523194447
+    second: Shangweititle_6
+  - first:
+      213: 2536941403195932830
+    second: Shangweititle_7
+  - first:
+      213: -4079995967873127589
+    second: Shangweititle_8
+  - first:
+      213: 5520172398343883245
+    second: Shangweititle_9
+  - first:
+      213: 3134279759073969826
+    second: Shangweititle_10
+  - first:
+      213: -2894738286273106381
+    second: Shangweititle_11
+  - first:
+      213: 2056950666476667420
+    second: Shangweititle_12
+  - first:
+      213: 5059619680352551266
+    second: Shangweititle_13
+  - first:
+      213: 4728801696880636968
+    second: Shangweititle_14
+  - first:
+      213: -2157634019576752915
+    second: Shangweititle_15
+  - first:
+      213: -9068848441045728277
+    second: Shangweititle_16
+  - first:
+      213: 2597595774436984442
+    second: Shangweititle_17
+  - first:
+      213: 2324531309347933023
+    second: Shangweititle_18
+  - first:
+      213: -1180869983291143128
+    second: Shangweititle_19
+  - first:
+      213: -2393411714336837932
+    second: Shangweititle_20
+  - first:
+      213: -4062778175273733972
+    second: Shangweititle_21
+  - first:
+      213: 905318738273070426
+    second: Shangweititle_22
+  - first:
+      213: 792793472938988606
+    second: Shangweititle_23
+  - first:
+      213: -5202579261481371835
+    second: Shangweititle_24
+  - first:
+      213: 8737942589106212593
+    second: Shangweititle_25
+  - first:
+      213: -9070909600494963066
+    second: Shangweititle_26
+  - first:
+      213: 5212573138418244419
+    second: Shangweititle_27
+  - first:
+      213: 6100692091272679379
+    second: Shangweititle_28
+  - first:
+      213: -794742522966623366
+    second: Shangweititle_29
+  - first:
+      213: -4904232547310805588
+    second: Shangweititle_30
+  - first:
+      213: -8585681933107360766
+    second: Shangweititle_31
+  - first:
+      213: -5039591642375629540
+    second: Shangweititle_32
+  - first:
+      213: -3545987519033399724
+    second: Shangweititle_33
+  - first:
+      213: 3939407829203565023
+    second: Shangweititle_34
+  - first:
+      213: -8323492718472382360
+    second: Shangweititle_35
+  - first:
+      213: 5079188520330297519
+    second: Shangweititle_36
+  - first:
+      213: 8802605843991079580
+    second: Shangweititle_37
+  - first:
+      213: 6783443886992259873
+    second: Shangweititle_38
+  - first:
+      213: -6100178534965197537
+    second: Shangweititle_39
+  - first:
+      213: -3650937996202989719
+    second: Shangweititle_40
+  - first:
+      213: -6419238811422813307
+    second: Shangweititle_41
+  - first:
+      213: 7640736141893104814
+    second: Shangweititle_42
+  - first:
+      213: -615726508968129610
+    second: Shangweititle_43
+  - first:
+      213: -1120997657096644445
+    second: Shangweititle_44
+  - first:
+      213: 2895076881675288607
+    second: Shangweititle_45
+  - first:
+      213: 2273310083311555340
+    second: Shangweititle_46
+  - first:
+      213: 3693282944717410799
+    second: Shangweititle_47
+  - first:
+      213: 8374447502828344842
+    second: Shangweititle_48
+  - first:
+      213: -887753686326076528
+    second: Shangweititle_49
+  - first:
+      213: -6393570657138748693
+    second: Shangweititle_50
+  - first:
+      213: -810884322076840623
+    second: Shangweititle_51
+  - first:
+      213: -4635527916970114856
+    second: Shangweititle_52
+  - first:
+      213: -1916156206382596939
+    second: Shangweititle_53
+  - first:
+      213: 1390021548702020923
+    second: Shangweititle_54
+  - first:
+      213: 1833057919634788112
+    second: Shangweititle_55
+  - first:
+      213: 951687379167944629
+    second: Shangweititle_56
+  - first:
+      213: 5737729178986731621
+    second: Shangweititle_57
+  - first:
+      213: -2147572199474255286
+    second: Shangweititle_58
+  - first:
+      213: -6744754398784977805
+    second: Shangweititle_59
+  - first:
+      213: 6260024545282773075
+    second: Shangweititle_60
+  - first:
+      213: -8954293007583749393
+    second: Shangweititle_61
+  - first:
+      213: -754538790595862691
+    second: Shangweititle_62
+  - first:
+      213: 4916189890874481300
+    second: Shangweititle_63
+  - first:
+      213: -128192319125760936
+    second: Shangweititle_64
+  - first:
+      213: -1606423478092661731
+    second: Shangweititle_65
+  - first:
+      213: -1470878152165332111
+    second: Shangweititle_66
+  - first:
+      213: -2068235155713051674
+    second: Shangweititle_67
+  - first:
+      213: 4331163776829649212
+    second: Shangweititle_68
+  - first:
+      213: -6751954330273304813
+    second: Shangweititle_69
+  - first:
+      213: -2304172397521774493
+    second: Shangweititle_70
+  - first:
+      213: -3184797574404786361
+    second: Shangweititle_71
+  - first:
+      213: 296976285391117121
+    second: Shangweititle_72
+  - first:
+      213: 105567574287976530
+    second: Shangweititle_73
+  - first:
+      213: -4730714308974461498
+    second: Shangweititle_74
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shangweititle_0
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1731
+        width: 26
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf8397d753ec078e0800000000000000
+      internalID: -1697630330384992005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_1
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1720
+        width: 180
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e8bd45a287409e0800000000000000
+      internalID: -1656066639757865465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_2
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 1789
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f6c4e05793a5640800000000000000
+      internalID: 5069427505472761712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_3
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 1623
+        width: 160
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa111b9d95f81570800000000000000
+      internalID: 8437763959138884266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_4
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 1783
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63095fcb7a2bbd750800000000000000
+      internalID: 6330850134698856502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_5
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1765
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9441ec1ecb713ce80800000000000000
+      internalID: -8159651999855537079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_6
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1762
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b902cf17ac8ddbe0800000000000000
+      internalID: -1450848855523194447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_7
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1726
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e908971d3c6053320800000000000000
+      internalID: 2536941403195932830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_8
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1731
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b65e1b841f067c0800000000000000
+      internalID: -4079995967873127589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_9
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1724
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de904369c879b9c40800000000000000
+      internalID: 5520172398343883245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_10
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1640
+        width: 39
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a60d42b5d23f7b20800000000000000
+      internalID: 3134279759073969826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1001
+        width: 497
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ee7f89dd2d3d7d0800000000000000
+      internalID: -2894738286273106381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_12
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1676
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1248d3abb1cb8c10800000000000000
+      internalID: 2056950666476667420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_13
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 1674
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2614df1da41673640800000000000000
+      internalID: 5059619680352551266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_14
+      rect:
+        serializedVersion: 2
+        x: 2037
+        y: 1676
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824b5dbc61410a140800000000000000
+      internalID: 4728801696880636968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_15
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1669
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de454d37a4b8e02e0800000000000000
+      internalID: -2157634019576752915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_16
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 1633
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be34d95446af42280800000000000000
+      internalID: -9068848441045728277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_17
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 1676
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a764f5d18938c0420800000000000000
+      internalID: 2597595774436984442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_18
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 1623
+        width: 59
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b05f2f8e4624020800000000000000
+      internalID: 2324531309347933023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_19
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 1640
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c8208b105bc9fe0800000000000000
+      internalID: -1180869983291143128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_20
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 1637
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dea1b50ab4e8ced0800000000000000
+      internalID: -2393411714336837932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_21
+      rect:
+        serializedVersion: 2
+        x: 2105
+        y: 1625
+        width: 49
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0799d66cc1e97c0800000000000000
+      internalID: -4062778175273733972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_22
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 1418
+        width: 167
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d654b8896509c00800000000000000
+      internalID: 905318738273070426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_23
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1089
+        width: 77
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e34d6c69671900b00800000000000000
+      internalID: 792793472938988606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_24
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1174
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547b693e9b9bcc7b0800000000000000
+      internalID: -5202579261481371835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_25
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 1046
+        width: 183
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fece6b3d78634970800000000000000
+      internalID: 8737942589106212593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_26
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 976
+        width: 244
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68631d037c7ad1280800000000000000
+      internalID: -9070909600494963066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_27
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 945
+        width: 68
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b9929e6a7c65840800000000000000
+      internalID: 5212573138418244419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_28
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 919
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dfc75852230aa450800000000000000
+      internalID: 6100692091272679379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_29
+      rect:
+        serializedVersion: 2
+        x: 2129
+        y: 888
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b3da6d2e188f4f0800000000000000
+      internalID: -794742522966623366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_30
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 791
+        width: 25
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad51a16b7aa0fbb0800000000000000
+      internalID: -4904232547310805588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_31
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 856
+        width: 38
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c85ae45c789d880800000000000000
+      internalID: -8585681933107360766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_32
+      rect:
+        serializedVersion: 2
+        x: 2277
+        y: 895
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c155c272a16cf0ab0800000000000000
+      internalID: -5039591642375629540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_33
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 899
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456ab0e832f1acec0800000000000000
+      internalID: -3545987519033399724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_34
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 780
+        width: 52
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9321d7c869ba630800000000000000
+      internalID: 3939407829203565023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_35
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 818
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86837e8e8730d7c80800000000000000
+      internalID: -8323492718472382360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_36
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 741
+        width: 93
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0878d6c07ec7640800000000000000
+      internalID: 5079188520330297519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_37
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 804
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9aaddc7063292a70800000000000000
+      internalID: 8802605843991079580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_38
+      rect:
+        serializedVersion: 2
+        x: 2105
+        y: 808
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12bf7f56642a32e50800000000000000
+      internalID: 6783443886992259873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_39
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 774
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15cfec41ffc75ba0800000000000000
+      internalID: -6100178534965197537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_40
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 791
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96728576c33455dc0800000000000000
+      internalID: -3650937996202989719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_41
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 652
+        width: 127
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5831eb4cf484ae6a0800000000000000
+      internalID: -6419238811422813307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_42
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 780
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea4f608e909590a60800000000000000
+      internalID: 7640736141893104814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_43
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 734
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bbc92a90008477f0800000000000000
+      internalID: -615726508968129610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_44
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 736
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a895b6f19a6170f0800000000000000
+      internalID: -1120997657096644445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_45
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 652
+        width: 52
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1083b9c5116d2820800000000000000
+      internalID: 2895076881675288607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_46
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 679
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03591ce97b6c8f10800000000000000
+      internalID: 2273310083311555340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_47
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 703
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1d3e6354d214330800000000000000
+      internalID: 3693282944717410799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_48
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 691
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a069d3452a3083470800000000000000
+      internalID: 8374447502828344842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_49
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 648
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b9d7ec9b01ea3f0800000000000000
+      internalID: -887753686326076528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_50
+      rect:
+        serializedVersion: 2
+        x: 2308
+        y: 696
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be252e6ac597547a0800000000000000
+      internalID: -6393570657138748693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_51
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 703
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d2dac51092fb4f0800000000000000
+      internalID: -810884322076840623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_52
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 621
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d0079a6beb4bafb0800000000000000
+      internalID: -4635527916970114856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_53
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 657
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bcb76025127865e0800000000000000
+      internalID: -1916156206382596939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_54
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 657
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35b580eb395a4310800000000000000
+      internalID: 1390021548702020923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_55
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 624
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f4c884774507910800000000000000
+      internalID: 1833057919634788112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_56
+      rect:
+        serializedVersion: 2
+        x: 2398
+        y: 666
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf178c01a2153d00800000000000000
+      internalID: 951687379167944629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_57
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 618
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568d5ead94280af40800000000000000
+      internalID: 5737729178986731621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_58
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 652
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a25d0867a4232e0800000000000000
+      internalID: -2147572199474255286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_59
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 648
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3740b2b0c91d562a0800000000000000
+      internalID: -6744754398784977805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_60
+      rect:
+        serializedVersion: 2
+        x: 2397
+        y: 592
+        width: 59
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3505eca282310e650800000000000000
+      internalID: 6260024545282773075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_61
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 624
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fead43493f5fbb380800000000000000
+      internalID: -8954293007583749393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_62
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 2412
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5fd749b7f65785f0800000000000000
+      internalID: -754538790595862691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_63
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 603
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a90fd98a0d93440800000000000000
+      internalID: 4916189890874481300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_64
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 592
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8545393d3c1983ef0800000000000000
+      internalID: -128192319125760936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_65
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 585
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c707d9b56d4b9e0800000000000000
+      internalID: -1606423478092661731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_66
+      rect:
+        serializedVersion: 2
+        x: 2054
+        y: 582
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b6d481d14669be0800000000000000
+      internalID: -1470878152165332111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_67
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 565
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e3bfb775172c43e0800000000000000
+      internalID: -2068235155713051674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_68
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 116
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3178fde1826b1c30800000000000000
+      internalID: 4331163776829649212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_69
+      rect:
+        serializedVersion: 2
+        x: 2398
+        y: 111
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f266c5f4d3c42a0800000000000000
+      internalID: -6751954330273304813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_70
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 30
+        width: 57
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3685478996fe500e0800000000000000
+      internalID: -2304172397521774493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_71
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 10
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 747b318da735dc3d0800000000000000
+      internalID: -3184797574404786361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_72
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 30
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14bd37dab521f1400800000000000000
+      internalID: 296976285391117121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_73
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 28
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2580c35462d077100800000000000000
+      internalID: 105567574287976530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shangweititle_74
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 27
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd38bf7660295eb0800000000000000
+      internalID: -4730714308974461498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Shangweititle_0: -1697630330384992005
+      Shangweititle_1: -1656066639757865465
+      Shangweititle_10: 3134279759073969826
+      Shangweititle_11: -2894738286273106381
+      Shangweititle_12: 2056950666476667420
+      Shangweititle_13: 5059619680352551266
+      Shangweititle_14: 4728801696880636968
+      Shangweititle_15: -2157634019576752915
+      Shangweititle_16: -9068848441045728277
+      Shangweititle_17: 2597595774436984442
+      Shangweititle_18: 2324531309347933023
+      Shangweititle_19: -1180869983291143128
+      Shangweititle_2: 5069427505472761712
+      Shangweititle_20: -2393411714336837932
+      Shangweititle_21: -4062778175273733972
+      Shangweititle_22: 905318738273070426
+      Shangweititle_23: 792793472938988606
+      Shangweititle_24: -5202579261481371835
+      Shangweititle_25: 8737942589106212593
+      Shangweititle_26: -9070909600494963066
+      Shangweititle_27: 5212573138418244419
+      Shangweititle_28: 6100692091272679379
+      Shangweititle_29: -794742522966623366
+      Shangweititle_3: 8437763959138884266
+      Shangweititle_30: -4904232547310805588
+      Shangweititle_31: -8585681933107360766
+      Shangweititle_32: -5039591642375629540
+      Shangweititle_33: -3545987519033399724
+      Shangweititle_34: 3939407829203565023
+      Shangweititle_35: -8323492718472382360
+      Shangweititle_36: 5079188520330297519
+      Shangweititle_37: 8802605843991079580
+      Shangweititle_38: 6783443886992259873
+      Shangweititle_39: -6100178534965197537
+      Shangweititle_4: 6330850134698856502
+      Shangweititle_40: -3650937996202989719
+      Shangweititle_41: -6419238811422813307
+      Shangweititle_42: 7640736141893104814
+      Shangweititle_43: -615726508968129610
+      Shangweititle_44: -1120997657096644445
+      Shangweititle_45: 2895076881675288607
+      Shangweititle_46: 2273310083311555340
+      Shangweititle_47: 3693282944717410799
+      Shangweititle_48: 8374447502828344842
+      Shangweititle_49: -887753686326076528
+      Shangweititle_5: -8159651999855537079
+      Shangweititle_50: -6393570657138748693
+      Shangweititle_51: -810884322076840623
+      Shangweititle_52: -4635527916970114856
+      Shangweititle_53: -1916156206382596939
+      Shangweititle_54: 1390021548702020923
+      Shangweititle_55: 1833057919634788112
+      Shangweititle_56: 951687379167944629
+      Shangweititle_57: 5737729178986731621
+      Shangweititle_58: -2147572199474255286
+      Shangweititle_59: -6744754398784977805
+      Shangweititle_6: -1450848855523194447
+      Shangweititle_60: 6260024545282773075
+      Shangweititle_61: -8954293007583749393
+      Shangweititle_62: -754538790595862691
+      Shangweititle_63: 4916189890874481300
+      Shangweititle_64: -128192319125760936
+      Shangweititle_65: -1606423478092661731
+      Shangweititle_66: -1470878152165332111
+      Shangweititle_67: -2068235155713051674
+      Shangweititle_68: 4331163776829649212
+      Shangweititle_69: -6751954330273304813
+      Shangweititle_7: 2536941403195932830
+      Shangweititle_70: -2304172397521774493
+      Shangweititle_71: -3184797574404786361
+      Shangweititle_72: 296976285391117121
+      Shangweititle_73: 105567574287976530
+      Shangweititle_74: -4730714308974461498
+      Shangweititle_8: -4079995967873127589
+      Shangweititle_9: 5520172398343883245
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
