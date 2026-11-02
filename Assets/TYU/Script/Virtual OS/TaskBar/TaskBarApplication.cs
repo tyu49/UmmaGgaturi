@@ -13,13 +13,14 @@ namespace TYU.Script.Virtual_OS.TaskBar
         private TaskBarManager _manager;
         private TaskBarAppMover _mover;
         private RectTransform _rtTrm;
+        private Camera _mainCam;
         public ApplicationSO _myData { get; private set; }
         public void Initialize(ApplicationSO data, TaskBarManager manager, Vector2 pos)
         {
             _myData = data;
             _manager = manager;
             _rtTrm = transform as RectTransform;
-            
+            _mainCam = Camera.main;
             _mover = _manager.AppMover;
             icon.sprite = data.Icon;
             _rtTrm.anchoredPosition = pos;  
@@ -35,6 +36,15 @@ namespace TYU.Script.Virtual_OS.TaskBar
         public void RemoveApp()
         {
             Destroy(gameObject);
+        }
+
+        public Vector2 GetPos(Canvas cvs)
+        {
+            Vector2 scPos = _mainCam.WorldToScreenPoint(transform.position);
+            var cvsRt = cvs.transform as RectTransform;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(cvsRt, scPos,
+                cvs.renderMode == RenderMode.ScreenSpaceCamera ? cvs.worldCamera : null, out var point);
+            return point;
         }
 
         public void StartMove() => _mover.StartMove(this);
