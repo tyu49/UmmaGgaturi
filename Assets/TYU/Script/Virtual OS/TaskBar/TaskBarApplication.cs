@@ -1,12 +1,13 @@
 ﻿using PrimeTween;
 using TYU.Script.Virtual_OS.Application;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace TYU.Script.Virtual_OS.TaskBar
 {
-    public class TaskBarApplication : MonoBehaviour
+    public class TaskBarApplication : MonoBehaviour, IPointerUpHandler, IPointerMoveHandler, IPointerClickHandler, IPointerDownHandler
     {
         [SerializeField] private Image icon;
         [SerializeField] private Image backGround;
@@ -15,6 +16,7 @@ namespace TYU.Script.Virtual_OS.TaskBar
         private TaskBarAppMover _mover;
         private RectTransform _rtTrm;
         private Camera _mainCam;
+        private Vector3 _beforePos;
         public ApplicationSO _myData { get; private set; }
         public void Initialize(ApplicationSO data, TaskBarManager manager, Vector2 pos)
         {
@@ -36,7 +38,8 @@ namespace TYU.Script.Virtual_OS.TaskBar
 
         public void RemoveApp()
         {
-            Destroy(gameObject);
+            
+            _manager.RemoveApp(_myData);
         }
 
         public Vector2 GetPos(Canvas cvs)
@@ -48,32 +51,34 @@ namespace TYU.Script.Virtual_OS.TaskBar
             return point;
         }
 
-        // public void StartMove() => _mover.StartMove(this);
-        // public void EndMove() => _mover.StopMove();
-
         public void ClickApp()
         {
-            if (_mover.isMoved) return;
             Debug.Log(1);
         }
-        private void Update()
+        public void OnPointerUp(PointerEventData eventData)
         {
-            if(Mouse.current.leftButton.wasPressedThisFrame)
-                CheckCanDrag(true);
-            if(Mouse.current.leftButton.wasReleasedThisFrame)
-                CheckCanDrag(false);
-        }
-
-        private void CheckCanDrag(bool isClick)
-        {
-            if(!isClick)
+            if (eventData.button == PointerEventData.InputButton.Left)
             {
                 _mover.StopMove();
-                return;
             }
-            
-            if(RectTransformUtility.RectangleContainsScreenPoint(_rtTrm, Mouse.current.position.ReadValue()))
-                _mover.StartMove(this);
+        }
+
+        public void OnPointerMove(PointerEventData eventData)
+        {
+            if(eventData.dragging)
+                _mover.StartMove(this, _beforePos);
+        }
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            ClickApp();
+        }
+
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            if(eventData.button == PointerEventData.InputButton.Left)
+                _beforePos = transform.position;
+            Debug.Log(4);
         }
     }
 }

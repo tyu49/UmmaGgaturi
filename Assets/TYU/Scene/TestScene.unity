@@ -728,6 +728,7 @@ MonoBehaviour:
   text: {fileID: 0}
   selectColor: {r: 0, g: 0, b: 0, a: 0}
   clickColor: {r: 0, g: 0, b: 0, a: 0}
+  isNull: 1
 --- !u!224 &1578378680 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7348025701374898894, guid: 9d27e72fedfbd9148ad2ec56cc509eb5, type: 3}
