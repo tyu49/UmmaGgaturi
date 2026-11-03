@@ -2,11 +2,12 @@
 using SUNFISHH.Scripts;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace TYU.Script.Virtual_OS.Application
 {
-    public class Application : MonoBehaviour
+    public class Application : MonoBehaviour, IPointerUpHandler, IPointerMoveHandler, IPointerClickHandler, IPointerDownHandler
     {
         public ApplicationSO myData { get; private set; }
         public RectTransform trm { get; private set; }
@@ -15,12 +16,14 @@ namespace TYU.Script.Virtual_OS.Application
         [SerializeField] private TextMeshProUGUI text;
         [SerializeField] private Color selectColor;
         [SerializeField] private Color clickColor;
+        [SerializeField] private bool isNull;
         private AppPoint _curPoint;
         private ApplicationManager _manager;
         private float _clickDelay = 0.6f;
         private float _lastClickTime = 0f;
         private bool _isClicked;
         private ApplicationMover _mover;
+        
 
         private AbstractWindow _myWindow;
         //대충 여기다가 나중에 추상화 클래스로 창을 프로퍼티로 넣으셈
@@ -45,12 +48,11 @@ namespace TYU.Script.Virtual_OS.Application
         public void MouseEnter() => backGround.color = selectColor;
         public void MouseExit() => backGround.color = _isClicked ? clickColor : new Color(1, 1, 1, 0);
         
-        public void StartMove() => _mover.StartMove(this);
-        public void EndMove() => _mover.TryMove();
+        // public void StartMove() => _mover.StartMove(this);
+        // public void EndMove() => _mover.TryMove();
 
         public void ClickAction()
         {
-            _manager.ClickAction(this);
             if (myData == null) return;
             // if(_lastClickTime + _clickDelay < Time.time)
             //이때 _myWindow에서 창 호출하는거 하면 됌
@@ -75,6 +77,33 @@ namespace TYU.Script.Virtual_OS.Application
         {
             if (_manager == null) return;
             _manager.clickAction -= ClickServer;
+        }
+
+        public void OnPointerUp(PointerEventData eventData)
+        {
+            if (myData == null) return;
+            if(eventData.button == PointerEventData.InputButton.Left)
+                _mover.TryMove();
+                
+        }
+
+        public void OnPointerMove(PointerEventData eventData)
+        {
+            if (myData == null) return;
+            if (eventData.button == PointerEventData.InputButton.Left && eventData.dragging)
+                _mover.StartMove(this);
+        }
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            if (myData == null) return;
+            ClickAction();
+        }
+
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            if(!isNull)
+                _manager.ClickAction(this);
         }
     }
 }
