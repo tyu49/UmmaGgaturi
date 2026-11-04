@@ -1,6 +1,7 @@
 ﻿using System;
 using SUNFISHH.Scripts;
 using TMPro;
+using TYU.Script.Virtual_OS.TaskBar;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -60,9 +61,17 @@ namespace TYU.Script.Virtual_OS.Application
             if (myData == null) return;
             if(_lastClickTime + _clickDelay < Time.time)
             {
-                
-                if(!_openedOnce)
-                _myWindow.OpenWindow();
+                if (!_openedOnce)
+                {
+                    
+                }
+                if (!_manager.CheckTbApp(myData))
+                {
+                    var tb = _manager.MakeTbAPp(myData);
+                    
+                }
+                    
+                    
                 
             }
             //이때 _myWindow에서 창 호출하는거 하면 됌
