@@ -50,6 +50,9 @@ namespace TYU.Script.Virtual_OS.Application
             tBManager.MakeNewApp(data);
         }
 
+        public void CheckTbApp(ApplicationSO data) => tBManager.CheckApp(data);
+        public void MakeTbAPp(ApplicationSO data) => tBManager.MakeNewApp(data);
+
         [ContextMenu("test")]
         public void tets() => TryMakeApplication(testSo);
 

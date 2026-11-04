@@ -38,7 +38,7 @@ namespace TYU.Script.Virtual_OS.TaskBar
 
         public void RemoveApp()
         {
-            
+            if (_myData.LockInTaskBar) return;
             _manager.RemoveApp(_myData);
         }
 
@@ -78,7 +78,6 @@ namespace TYU.Script.Virtual_OS.TaskBar
         {
             if(eventData.button == PointerEventData.InputButton.Left)
                 _beforePos = transform.position;
-            Debug.Log(4);
         }
     }
 }

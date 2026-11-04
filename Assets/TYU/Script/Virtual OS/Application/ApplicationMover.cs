@@ -56,7 +56,7 @@ namespace TYU.Script.Virtual_OS.Application
 
         public void TryMove()
         {
-            
+            if (!_isMoving) return;
             _mvMd.StopMove();
             AppPoint targetPoint = TryCatchPoint();
             if (targetPoint != null)

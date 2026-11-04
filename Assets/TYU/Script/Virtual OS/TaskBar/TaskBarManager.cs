@@ -18,13 +18,14 @@ namespace TYU.Script.Virtual_OS.TaskBar
             AppMover.Initialize(taskBarCanvas, this);
         }
         
-        public void MakeNewApp(ApplicationSO data)
+        public TaskBarApplication MakeNewApp(ApplicationSO data)
         {
             var go = Instantiate(appBase, transform);
             var tb = go.GetComponent<TaskBarApplication>();
             tb.Initialize(data, this, new Vector2(_tBApps.Count * _baseWidth, 0f));
             _appDict.TryAdd(data, tb);
             _tBApps.Add(tb);
+            return tb;
         }
 
         private void SortApps()
@@ -57,6 +58,8 @@ namespace TYU.Script.Virtual_OS.TaskBar
             _tBApps.Insert(targetIdx, user);
             SortApps();
         }
+
+        public bool CheckApp(ApplicationSO data) => _appDict.ContainsKey(data);
 
     }
 }
