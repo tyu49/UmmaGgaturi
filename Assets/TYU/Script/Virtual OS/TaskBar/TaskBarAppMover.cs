@@ -9,11 +9,15 @@ namespace TYU.Script.Virtual_OS.TaskBar
     {
         [SerializeField] private Image icon;
         [SerializeField] private Transform iconTrm;
+        [SerializeField] private float distanceLimit;
         private RectTransform _rtTrm;
         private TaskBarManager _manager;
         private Canvas _myCvs;
         private TaskBarApplication _curData;
         private UIDragMovementModule _mvMd;
+        public bool isMoved { get; private set; }
+        private Vector2 _beforePos;
+        private bool _isMoving;
         public void Initialize(Canvas cvs, TaskBarManager manager)
         {
             _manager = manager;
@@ -23,12 +27,15 @@ namespace TYU.Script.Virtual_OS.TaskBar
             gameObject.SetActive(false);
         }
 
-        public void StartMove(TaskBarApplication data)
+        public void StartMove(TaskBarApplication data, Vector3 beforePos)
         {
+            if (_isMoving) return;
+            _isMoving = true;
             gameObject.SetActive(true);
-            
+            isMoved = false;
+            _beforePos = _rtTrm.anchoredPosition;
             _rtTrm.anchoredPosition = GetMousePosInCanvas.GetPos(_myCvs);
-            iconTrm.position = data.transform.position;
+            iconTrm.position = beforePos;
             var rtTrm = data.transform as RectTransform;
             var plusPos = rtTrm.sizeDelta / 2;
             var iconRt = iconTrm as RectTransform;
@@ -50,6 +57,7 @@ namespace TYU.Script.Virtual_OS.TaskBar
 
         public void StopMove()
         {
+            _isMoving = false;
             _mvMd.StopMove();
             gameObject.SetActive(false);
         }
@@ -57,6 +65,8 @@ namespace TYU.Script.Virtual_OS.TaskBar
         private void Update()
         {
             _mvMd.UseModule();
+            if (Mathf.Abs((_rtTrm.anchoredPosition - _beforePos).magnitude) > distanceLimit)
+                isMoved = true;
         }
     }
 }

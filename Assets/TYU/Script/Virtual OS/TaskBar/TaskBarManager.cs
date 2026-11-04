@@ -39,7 +39,7 @@ namespace TYU.Script.Virtual_OS.TaskBar
         {
             if (!_appDict.TryGetValue(data, out var key)) return;
             _tBApps.Remove(key);
-            _appDict[data].RemoveApp();
+            Destroy(_appDict[data].gameObject);
             _appDict.Remove(data);
             SortApps();
         }

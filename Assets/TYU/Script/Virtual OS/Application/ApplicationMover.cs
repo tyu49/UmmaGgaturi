@@ -21,6 +21,7 @@ namespace TYU.Script.Virtual_OS.Application
         private bool _isOn;
         private Collider2D[] _resultArray = new Collider2D[8];
         private Vector2 _beforePos;
+        private bool _isMoving;
 
         private UIDragMovementModule _mvMd;
         //OnMouseClick 에서 Canceled가 됐을 떄 bool값을 false로 해서 위치 변경 취소 -> 개머저리 그냥 쌩고생 하는 거임 이거 완전
@@ -43,6 +44,8 @@ namespace TYU.Script.Virtual_OS.Application
 
         public void StartMove(Application data)
         {
+            if (_isMoving) return;
+            _isMoving = true;
             _beforePos = GetMousePosInCanvas.GetPos(_myCvs);
             _rtTrm.anchoredPosition = data.trm.anchoredPosition;
             _data = data;
@@ -59,6 +62,7 @@ namespace TYU.Script.Virtual_OS.Application
             if (targetPoint != null)
                 _data.TryChangePos(targetPoint);
             _data = null;
+            _isMoving = false;
             gameObject.SetActive(false);
         }
 
