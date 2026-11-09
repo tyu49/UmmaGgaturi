@@ -47,7 +47,6 @@ namespace TYU.Script.Virtual_OS.Application
 
                 if (isEnd) break;
             }
-            tBManager.MakeNewApp(data);
         }
 
         public bool CheckTbApp(ApplicationSO data) => tBManager.CheckApp(data);

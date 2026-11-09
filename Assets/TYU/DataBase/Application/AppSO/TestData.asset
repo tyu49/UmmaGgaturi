@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TYU.Script.Virtual_OS.Application.ApplicationSO
   <Icon>k__BackingField: {fileID: 21300000, guid: a706a6790d769d043b11274599b92ff7, type: 3}
   <Name>k__BackingField: Baloon
-  <Window>k__BackingField: {fileID: 0}
+  <Window>k__BackingField: {fileID: 8535952395565522216, guid: 5da718683ccacf842bee7c23dcce5d2d, type: 3}
   <LockInTaskBar>k__BackingField: 0
