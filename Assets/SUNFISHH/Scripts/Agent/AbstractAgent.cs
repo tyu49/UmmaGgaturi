@@ -29,17 +29,27 @@ namespace SUNFISHH.Scripts.Player
         private void ClampRange()
         {
             Vector2 pos = new Vector2(transform.position.x + _rangeOffset.x, transform.position.y +  _rangeOffset.y);
-
+            
             foreach (var range in _moveRange)
             {
                 if (range.OverlapPoint(pos))
                 {
+                    if(_curRange != null)
+                    {
+                        if (!_curRange == range)
+                        {
+                            // 현재 범위가 아니면
+                            Debug.Log($"범위안은 맞는데 현재 범위가 아님 {_curRange} != {range}");
+                            continue;
+                        }
+                    }
+                    Debug.Log("범위가 존재하지 않음");
                     _curRange = range;
                     return;
                 }
             }
             Vector2 clamp = _curRange.ClosestPoint(pos) - _rangeOffset;
-            transform.position = new Vector2(clamp.x, clamp.y);
+            transform.position = clamp;
         }
         
         /*public bool CheckRange(Vector2 nextMovePos)
