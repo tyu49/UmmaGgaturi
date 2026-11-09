@@ -1,6 +1,7 @@
 ﻿using System;
 using SUNFISHH.Scripts;
 using TMPro;
+using TYU.Script.Virtual_OS.TaskBar;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -47,6 +48,7 @@ namespace TYU.Script.Virtual_OS.Application
             _curPoint = point;
             // _myWindow = data.Window.GetComponent<AbstractWindow>();
             _manager.clickAction += ClickServer;
+            EventSystem.current.pixelDragThreshold = 2;
         }
 
         public void MouseEnter() => backGround.color = selectColor;
@@ -58,12 +60,21 @@ namespace TYU.Script.Virtual_OS.Application
         public void ClickAction()
         {
             if (myData == null) return;
-            if(_lastClickTime + _clickDelay < Time.time)
+            if(_lastClickTime + _clickDelay > Time.time)
             {
-                
-                if(!_openedOnce)
-                _myWindow.OpenWindow();
-                
+                if (!_openedOnce)
+                {
+                    var tb = _manager.MakeTbAPp(myData);
+                    var go = Instantiate(myData.Window);
+                    _myWindow = go.GetComponent<AbstractWindow>();
+                    _myWindow.Init(tb);
+                    _openedOnce = true;
+                }
+                if (!_manager.CheckTbApp(myData))
+                {
+                    var tb = _manager.MakeTbAPp(myData);
+                    _myWindow.Commit(tb);
+                }
             }
             //이때 _myWindow에서 창 호출하는거 하면 됌
             _lastClickTime = Time.time;

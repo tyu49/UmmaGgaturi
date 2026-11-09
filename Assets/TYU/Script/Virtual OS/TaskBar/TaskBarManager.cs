@@ -61,5 +61,7 @@ namespace TYU.Script.Virtual_OS.TaskBar
 
         public bool CheckApp(ApplicationSO data) => _appDict.ContainsKey(data);
 
+
+
     }
 }

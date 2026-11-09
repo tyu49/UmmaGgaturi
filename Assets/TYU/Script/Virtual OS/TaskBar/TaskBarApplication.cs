@@ -20,6 +20,7 @@ namespace TYU.Script.Virtual_OS.TaskBar
         public ApplicationSO _myData { get; private set; }
         public void Initialize(ApplicationSO data, TaskBarManager manager, Vector2 pos)
         {
+            EventSystem.current.pixelDragThreshold = 1;
             _myData = data;
             _manager = manager;
             _rtTrm = transform as RectTransform;
