@@ -61,6 +61,16 @@ namespace SUNFISHH.Scripts
             _taskBarApplication = taskBar;
         }
 
+        public void Commit(TaskBarApplication taskBar)
+        {
+            _taskBarApplication = taskBar;
+        }
+
+        public void ReInit(TaskBarApplication taskBar)
+        {
+            
+        }
+
         public void OpenCheck(bool value)
         {
             _isOpen = value;

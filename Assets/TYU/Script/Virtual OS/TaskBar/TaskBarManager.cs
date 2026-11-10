@@ -18,13 +18,14 @@ namespace TYU.Script.Virtual_OS.TaskBar
             AppMover.Initialize(taskBarCanvas, this);
         }
         
-        public void MakeNewApp(ApplicationSO data)
+        public TaskBarApplication MakeNewApp(ApplicationSO data)
         {
             var go = Instantiate(appBase, transform);
             var tb = go.GetComponent<TaskBarApplication>();
             tb.Initialize(data, this, new Vector2(_tBApps.Count * _baseWidth, 0f));
             _appDict.TryAdd(data, tb);
             _tBApps.Add(tb);
+            return tb;
         }
 
         private void SortApps()
@@ -43,6 +44,18 @@ namespace TYU.Script.Virtual_OS.TaskBar
             _appDict.Remove(data);
             SortApps();
         }
+        
+        /*
+         * 他人に優しいあんたにこの心がわかるものか
+         * 人を呪うのが心地良い、たから詩を書いていた
+         * 朝の報道ニュースにいつか乗り換え載ることが夢だった
+         * その為に方包丁を研いでる
+         *
+         *  硝子を叩きつける音、
+         * 何かのか紙を破くこと、
+         * さよならの後の夕陽が美しいって、君だってわかるだろ
+         */
+        
 
         public void ChangePos(TaskBarApplication user, TaskBarApplication target)
         {
@@ -57,6 +70,11 @@ namespace TYU.Script.Virtual_OS.TaskBar
             _tBApps.Insert(targetIdx, user);
             SortApps();
         }
+
+        public bool CheckApp(ApplicationSO data) => _appDict.ContainsKey(data);
+        
+        
+
 
     }
 }

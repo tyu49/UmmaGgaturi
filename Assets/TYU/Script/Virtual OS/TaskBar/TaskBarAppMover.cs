@@ -68,5 +68,16 @@ namespace TYU.Script.Virtual_OS.TaskBar
             if (Mathf.Abs((_rtTrm.anchoredPosition - _beforePos).magnitude) > distanceLimit)
                 isMoved = true;
         }
+        /*
+         * さよなら歌姫最後の曲だね
+         * 君の歌が本当に好きだ
+         * 今夜も歌姫凄く綺麗だね
+         * 君の事が本当に好きだ
+         * 
+         * さよなら歌姫アンコールはどうする
+         * 君の事だから　きっと無いね
+         * さよなら歌姫、アルコールはどうする
+         * 僕は全然飲めないけど
+         */
     }
 }

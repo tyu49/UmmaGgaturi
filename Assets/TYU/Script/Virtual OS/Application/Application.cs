@@ -1,6 +1,7 @@
 ﻿using System;
 using SUNFISHH.Scripts;
 using TMPro;
+using TYU.Script.Virtual_OS.TaskBar;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -17,12 +18,16 @@ namespace TYU.Script.Virtual_OS.Application
         [SerializeField] private Color selectColor;
         [SerializeField] private Color clickColor;
         [SerializeField] private bool isNull;
+        
+        
         private AppPoint _curPoint;
         private ApplicationManager _manager;
         private float _clickDelay = 0.6f;
         private float _lastClickTime = 0f;
         private bool _isClicked;
         private ApplicationMover _mover;
+        private bool _isDown;
+        private bool _openedOnce;
         
 
         private AbstractWindow _myWindow;
@@ -43,6 +48,7 @@ namespace TYU.Script.Virtual_OS.Application
             _curPoint = point;
             // _myWindow = data.Window.GetComponent<AbstractWindow>();
             _manager.clickAction += ClickServer;
+            EventSystem.current.pixelDragThreshold = 2;
         }
 
         public void MouseEnter() => backGround.color = selectColor;
@@ -54,7 +60,22 @@ namespace TYU.Script.Virtual_OS.Application
         public void ClickAction()
         {
             if (myData == null) return;
-            // if(_lastClickTime + _clickDelay < Time.time)
+            if(_lastClickTime + _clickDelay > Time.time)
+            {
+                if (!_openedOnce)
+                {
+                    var tb = _manager.MakeTbAPp(myData);
+                    var go = Instantiate(myData.Window);
+                    _myWindow = go.GetComponent<AbstractWindow>();
+                    _myWindow.Init(tb);
+                    _openedOnce = true;
+                }
+                if (!_manager.CheckTbApp(myData))
+                {
+                    var tb = _manager.MakeTbAPp(myData);
+                    _myWindow.Commit(tb);
+                }
+            }
             //이때 _myWindow에서 창 호출하는거 하면 됌
             _lastClickTime = Time.time;
         }
@@ -82,15 +103,18 @@ namespace TYU.Script.Virtual_OS.Application
         public void OnPointerUp(PointerEventData eventData)
         {
             if (myData == null) return;
-            if(eventData.button == PointerEventData.InputButton.Left)
+            if (eventData.button == PointerEventData.InputButton.Left && _isDown)
+            {
                 _mover.TryMove();
+                _isDown = false;
+            }
                 
         }
 
         public void OnPointerMove(PointerEventData eventData)
         {
             if (myData == null) return;
-            if (eventData.button == PointerEventData.InputButton.Left && eventData.dragging)
+            if (eventData.button == PointerEventData.InputButton.Left && eventData.dragging && _isDown)
                 _mover.StartMove(this);
         }
 
@@ -102,8 +126,11 @@ namespace TYU.Script.Virtual_OS.Application
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            if(!isNull)
+            if (!isNull && eventData.button == PointerEventData.InputButton.Left)
+            {
                 _manager.ClickAction(this);
+                _isDown = true;
+            }
         }
     }
 }
