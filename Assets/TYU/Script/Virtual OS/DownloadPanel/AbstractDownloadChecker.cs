@@ -21,7 +21,7 @@ namespace TYU.Script.Virtual_OS.DownloadPanel
             }
             _hasVirus = _errorChecks > 0;
         }
-        public virtual void OnDownload()
+        public virtual void StartDownload()
         {
             ApplicationManager.Instance.TryMakeApplication(downloadApp);
         }
