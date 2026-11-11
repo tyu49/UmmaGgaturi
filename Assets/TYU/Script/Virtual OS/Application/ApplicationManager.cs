@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using NUnit.Framework.Internal;
+using SUNFISHH.Scripts;
 using TYU.Script.Virtual_OS.TaskBar;
 using UnityEngine;
 
 namespace TYU.Script.Virtual_OS.Application
 {
-    public class ApplicationManager : MonoBehaviour
+    public class ApplicationManager : MonoSingleton<ApplicationManager>
     {
         [SerializeField] private Canvas pointCanvas;
         [SerializeField] private Canvas applicationCanvas;
@@ -14,20 +15,20 @@ namespace TYU.Script.Virtual_OS.Application
         [field : SerializeField] public ApplicationMover appMover { get; private set; }
         [SerializeField] private ApplicationSO testSo;
         [SerializeField] private TaskBarManager tBManager;
-        private PointMaker _pointMaker;
+        [SerializeField]private PointMaker _pointMaker;
         private List<AppPoint> _points;
 
         public event Action<Application> clickAction;
         
         private void Awake()
         {
-            _pointMaker = GetComponentInChildren<PointMaker>();
+            if (!MakeSingleton()) return;
             _points = _pointMaker.MakePositions(pointCanvas);
             appMover.Initialize(applicationCanvas);
             tBManager.Initialize();
         }
 
-        private void TryMakeApplication(ApplicationSO data)
+        public void TryMakeApplication(ApplicationSO data)
         {
             for (int x = 0; x < 18; ++x)
             {
@@ -38,7 +39,7 @@ namespace TYU.Script.Virtual_OS.Application
                     if (point.curApp == null)
                     {
                         
-                        var newApp = Instantiate(appBase, applicationCanvas.transform).GetComponent<Application>();
+                        var newApp = Instantiate(appBase, applicationCanvas.transform);
                         newApp.Initialize(data, point, this);
                         isEnd = true;
                         break;
@@ -50,7 +51,7 @@ namespace TYU.Script.Virtual_OS.Application
         }
 
         public bool CheckTbApp(ApplicationSO data) => tBManager.CheckApp(data);
-        public TaskBarApplication MakeTbAPp(ApplicationSO data) => tBManager.MakeNewApp(data);
+        public TaskBarApplication MakeTbApp(ApplicationSO data, AbstractWindow window) => tBManager.MakeNewApp(data, window);
 
         [ContextMenu("test")]
         public void tets() => TryMakeApplication(testSo);
