@@ -1,4 +1,5 @@
 ﻿using PrimeTween;
+using SUNFISHH.Scripts;
 using TYU.Script.Virtual_OS.Application;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -17,8 +18,9 @@ namespace TYU.Script.Virtual_OS.TaskBar
         private RectTransform _rtTrm;
         private Camera _mainCam;
         private Vector3 _beforePos;
+        private AbstractWindow _myWindow;
         public ApplicationSO _myData { get; private set; }
-        public void Initialize(ApplicationSO data, TaskBarManager manager, Vector2 pos)
+        public void Initialize(ApplicationSO data, TaskBarManager manager, Vector2 pos, AbstractWindow window)
         {
             EventSystem.current.pixelDragThreshold = 1;
             _myData = data;
@@ -27,7 +29,8 @@ namespace TYU.Script.Virtual_OS.TaskBar
             _mainCam = Camera.main;
             _mover = _manager.AppMover;
             icon.sprite = data.Icon;
-            _rtTrm.anchoredPosition = pos;  
+            _rtTrm.anchoredPosition = pos;
+            _myWindow = window;
         }
 
         public void MoveTo(float xPos)
@@ -54,7 +57,7 @@ namespace TYU.Script.Virtual_OS.TaskBar
 
         public void ClickApp()
         {
-            Debug.Log(1);
+            _myWindow.OpenWindow();
         }
         public void OnPointerUp(PointerEventData eventData)
         {
