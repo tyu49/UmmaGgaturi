@@ -6,7 +6,6 @@ namespace TYU.Script.Virtual_OS.DownloadPanel.Panels
     {
         public override void StartDownload()
         {
-                
             base.StartDownload();
         }
     }

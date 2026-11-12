@@ -769,16 +769,39 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4986721798421027102, guid: 5da718683ccacf842bee7c23dcce5d2d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8535952395565522216, guid: 5da718683ccacf842bee7c23dcce5d2d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 983484288}
   m_SourcePrefab: {fileID: 100100000, guid: 5da718683ccacf842bee7c23dcce5d2d, type: 3}
 --- !u!224 &983484286 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8763531634238211424, guid: 5da718683ccacf842bee7c23dcce5d2d, type: 3}
   m_PrefabInstance: {fileID: 983484285}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &983484287 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8535952395565522216, guid: 5da718683ccacf842bee7c23dcce5d2d, type: 3}
+  m_PrefabInstance: {fileID: 983484285}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &983484288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983484287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9b3cbd1465c4689a67666ec93373fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TYU.Script.Virtual_OS.DownloadPanel.Panels.RobIoxDownloader
+  checkers: []
+  downloadApp: {fileID: 0}
 --- !u!1 &1168397333
 GameObject:
   m_ObjectHideFlags: 0
