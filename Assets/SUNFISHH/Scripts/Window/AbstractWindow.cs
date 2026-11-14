@@ -213,6 +213,8 @@ namespace SUNFISHH.Scripts
             closeWin.endValue = new Vector2(curSize.x /2, curSize.y /2);
 
             Tween.UISizeDelta(_rectTransform, closeWin).OnComplete(() => gameObject.SetActive(false));
+            
+            _rectTransform.position = Vector2.zero;
         }
 
         #endregion
