@@ -10,6 +10,8 @@ namespace SUNFISHH.Scripts.Player
         [Header("Settings")] 
         [SerializeField] private float _followDur = 0.3f;
         private Vector2 _mousePos;
+        
+        
 
         private void Update()
         {
