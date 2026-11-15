@@ -19,6 +19,7 @@ namespace TYU.Script.Virtual_OS.TaskBar
         private Camera _mainCam;
         private Vector3 _beforePos;
         private AbstractWindow _myWindow;
+        private WindowLayerReplace _windowReplace;
         public ApplicationSO _myData { get; private set; }
         public void Initialize(ApplicationSO data, TaskBarManager manager, Vector2 pos, AbstractWindow window)
         {
@@ -31,6 +32,7 @@ namespace TYU.Script.Virtual_OS.TaskBar
             icon.sprite = data.Icon;
             _rtTrm.anchoredPosition = pos;
             _myWindow = window;
+            _windowReplace = _myWindow.GetComponent<WindowLayerReplace>();
         }
 
         public void MoveTo(float xPos)
@@ -58,6 +60,7 @@ namespace TYU.Script.Virtual_OS.TaskBar
         public void ClickApp()
         {
             _myWindow.OpenWindow();
+            _windowReplace.Replace();
         }
         public void OnPointerUp(PointerEventData eventData)
         {
@@ -66,18 +69,12 @@ namespace TYU.Script.Virtual_OS.TaskBar
                 _mover.StopMove();
             }
         }
-
         public void OnPointerMove(PointerEventData eventData)
         {
             if(eventData.dragging)
                 _mover.StartMove(this, _beforePos);
         }
-
-        public void OnPointerClick(PointerEventData eventData)
-        {
-            ClickApp();
-        }
-
+        public void OnPointerClick(PointerEventData eventData) => ClickApp();
         public void OnPointerDown(PointerEventData eventData)
         {
             if(eventData.button == PointerEventData.InputButton.Left)
