@@ -2,7 +2,7 @@
 
 namespace TYU.Script.Virtual_OS.Virus.Viruses
 {
-    public class VirusMEMEZ : AbstractVirus
+    public class StillUsingComputer : MonoBehaviour
     {
         
     }

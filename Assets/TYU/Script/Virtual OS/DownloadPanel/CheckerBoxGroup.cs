@@ -23,6 +23,7 @@ namespace TYU.Script.Virtual_OS.DownloadPanel
             _checkersInGroup = boxes.ToList();
             foreach (var checker in _checkersInGroup)
                 checker.OnClicked += CheckState;
+            DisableAll();
         }
 
         public void OnPointerClick(PointerEventData eventData)

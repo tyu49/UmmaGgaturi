@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace TYU.Script.Virtual_OS.DownloadPanel
 {
-    public abstract class AbstractDownloadChecker : MonoBehaviour
+    public abstract class AbstractErrorChecker : MonoBehaviour
     {
         [SerializeField] protected List<VirusCheckerBox> checkers;
         [SerializeField] protected ApplicationSO downloadApp;
