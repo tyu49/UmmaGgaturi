@@ -11,10 +11,11 @@ namespace TYU.Script.Virtual_OS.GgaturiTok
         {
             _myTrm = gameObject.GetComponent<RectTransform>();
         }
+        public float GetHeight() => _myTrm.sizeDelta.y;
 
-        public float GetHeight()
+        public virtual void GetData(ReplyOption data)
         {
-            return _myTrm.sizeDelta.y;
+            
         }
     }
 }

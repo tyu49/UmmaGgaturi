@@ -31,10 +31,12 @@ public class GgaturiTokSizeController : MonoBehaviour
         if (height < _defaultHeight)
         {
             _myTrm.sizeDelta = new Vector2(0, _defaultHeight);
+            _myTrm.anchoredPosition = new Vector2(0, 0);
         }
         else
         {
             _myTrm.sizeDelta = new Vector2(0, height);
+            _myTrm.anchoredPosition = new Vector2(0, height -  _defaultHeight);
         }
     }
 }
