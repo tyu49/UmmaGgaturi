@@ -14,6 +14,7 @@ namespace TYU.Script.Virtual_OS.Virus
         
         private void Awake()
         {
+            _virusDict = new Dictionary<VirusEnum, AbstractVirus>();
             if (!MakeSingleton()) return;
             foreach (var virus in viruses)
                 _virusDict.TryAdd(virus.type, virus);

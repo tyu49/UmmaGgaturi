@@ -9,11 +9,17 @@ namespace TYU.Script.Virtual_OS.DownloadPanel
     public class VirusCheckerBox : MonoBehaviour, IPointerClickHandler
     {
         [SerializeField] private bool isVirusWhenActivate;
+        [SerializeField] private bool isVirusWhenDisable;
         [SerializeField] private bool isEssential;
         [SerializeField] private Image checkImage;
         [SerializeField] private VirusEnum virusType;
         public bool currentState { get; private set; } //true = 활성화, false = 비활성화
         public event Action OnClicked;
+
+        private void Start()
+        {
+            ChangeState(currentState);
+        }
 
         public VirusEnum GetVirusState()
         {

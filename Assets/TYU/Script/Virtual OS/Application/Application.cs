@@ -48,6 +48,18 @@ namespace TYU.Script.Virtual_OS.Application
             // _myWindow = data.Window.GetComponent<AbstractWindow>();
             _manager.clickAction += ClickServer;
             EventSystem.current.pixelDragThreshold = 2;
+            if (myData.LockInTaskBar)
+                LockInTaskBar();
+        }
+
+        private void LockInTaskBar()
+        {
+            var window = Instantiate(myData.Window, _manager.WindowCanvas.transform);
+            _myWindow = window;
+            var tb = _manager.MakeTbApp(myData, _myWindow);
+            _myWindow.Init(tb);
+            _myWindow.gameObject.SetActive(false);
+            _openedOnce = true;
         }
 
         public void MouseEnter() => backGround.color = selectColor;
@@ -63,8 +75,8 @@ namespace TYU.Script.Virtual_OS.Application
             {
                 if (!_openedOnce)
                 {
-                    // var window = Instantiate(myData.Window, _manager.PartlyCanvas.transform);
-                    // _myWindow = window;
+                    var window = Instantiate(myData.Window, _manager.WindowCanvas.transform);
+                    _myWindow = window;
                     var tb = _manager.MakeTbApp(myData, _myWindow);
                     _myWindow.Init(tb);
                     _openedOnce = true;
