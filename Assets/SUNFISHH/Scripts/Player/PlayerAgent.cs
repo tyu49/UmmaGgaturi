@@ -13,11 +13,11 @@ namespace SUNFISHH.Scripts.Player
 
         private void Update()
         {
-            MouseValue();
+            Move();
             KeyBoardValue();
         }
 
-        private void MouseValue()
+        protected override void Move()
         {
             _mousePos = Mouse.current.position.ReadValue();
             //Tween.Position(transform, _mousePos, _followDur);

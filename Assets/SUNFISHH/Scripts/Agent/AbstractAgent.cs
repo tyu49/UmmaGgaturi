@@ -31,6 +31,11 @@ namespace SUNFISHH.Scripts.Player
         {
         }
 
+        protected virtual void Move()
+        {
+            moveCompo.Move();
+        }
+
         protected Vector2 ClampRange(Vector2 nextPos)
         {
             Vector2 pos = nextPos;
@@ -66,11 +71,12 @@ namespace SUNFISHH.Scripts.Player
             return pos;
         }       
 
+        // 수정 필요
         protected void TryChangeRange(Vector2 dir)
         {
             if (_curRange == null) return;
 
-            Vector2 origin = _curRange.transform.position;
+            Vector2 origin = transform.position;
             RaycastHit2D[] hits = Physics2D.RaycastAll(origin, dir, _rangeSearchDistance, _windowLayer);
             Debug.DrawRay(origin, dir * _rangeSearchDistance, Color.red, 0.3f);
 
