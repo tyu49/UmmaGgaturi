@@ -4,12 +4,13 @@ using TMPro;
 using TYU.Script.Module;
 using TYU.Script.Virtual_OS.TaskBar;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace SUNFISHH.Scripts
 {
-    public abstract class AbstractWindow : MonoBehaviour
+    public abstract class AbstractWindow : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
     {
         [Header("Window Settings")] 
         private Canvas _canvas;
@@ -41,23 +42,23 @@ namespace SUNFISHH.Scripts
         [SerializeField] private float duration = 0.05f;
         
         // 최소화
-        [SerializeField] private TweenSettings<Vector2> minWin;
-        [SerializeField] private TweenSettings<Vector2> rtnWin;
+         private TweenSettings<Vector2> minWin;
+         private TweenSettings<Vector2> rtnWin;
         
         // 전체화면
-        [SerializeField] private TweenSettings<Vector2> openMax;
-        [SerializeField] private TweenSettings<Vector2> openMin;
-        [SerializeField] private TweenSettings<Vector2> openPos;
-        [SerializeField] private TweenSettings<Vector2> openDelta;
+        private TweenSettings<Vector2> openMax;
+        private TweenSettings<Vector2> openMin;
+        private TweenSettings<Vector2> openPos;
+        private TweenSettings<Vector2> openDelta;
         
-        [SerializeField] private TweenSettings<Vector2> closeMax;
-        [SerializeField] private TweenSettings<Vector2> closeMin;
-        [SerializeField] private TweenSettings<Vector2> closePos;
-        [SerializeField] private TweenSettings<Vector2> closeDelta;
+        private TweenSettings<Vector2> closeMax;
+        private TweenSettings<Vector2> closeMin;
+        private TweenSettings<Vector2> closePos;
+        private TweenSettings<Vector2> closeDelta;
 
         // 닫기
-        [SerializeField] private TweenSettings<Vector2> openWin;
-        [SerializeField] private TweenSettings<Vector2> closeWin;
+        private TweenSettings<Vector2> openWin;
+        private TweenSettings<Vector2> closeWin;
         [SerializeField] private TweenSettings<float> openWinAlpha;
         [SerializeField] private TweenSettings<float> closeWinAlpha;
         
@@ -66,6 +67,8 @@ namespace SUNFISHH.Scripts
         public virtual void OnWindowUpdate() { }
         public virtual void OnOpen() { }
         public virtual void OnClose() { }
+
+        private Camera _cam;
         
 
         public void Init(TaskBarApplication taskBar)
@@ -99,11 +102,13 @@ namespace SUNFISHH.Scripts
             _dragMovementModule = new UIDragMovementModule(_rectTransform, _canvas);
             
             _srtSize = _rectTransform.sizeDelta;
+            
+            _cam =  Camera.main;
         }
 
         private void Update()
         {
-            if (CanDrag)
+            /*if (CanDrag)
             {
                 if (Mouse.current.leftButton.wasPressedThisFrame)
                     CheckCanDrag(true);
@@ -112,7 +117,7 @@ namespace SUNFISHH.Scripts
                     CheckCanDrag(false);
 
                 _dragMovementModule.UseModule();
-            }
+            }*/
             
             OnWindowUpdate();
         }
@@ -124,6 +129,12 @@ namespace SUNFISHH.Scripts
                 _dragMovementModule.StopMove();
                 return;
             }
+
+            /*if (CheckConflictWindow())
+            {
+                _dragMovementModule.StopMove();
+                return;
+            }*/
             
             var cam = _canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : _canvas.worldCamera;
             if (RectTransformUtility.RectangleContainsScreenPoint(dragRange, Mouse.current.position.ReadValue(), cam))
@@ -133,11 +144,19 @@ namespace SUNFISHH.Scripts
             
         }
 
+        private bool CheckConflictWindow()
+        {
+            if (_cam == null) return false;
+            
+            int index = _rectTransform.GetSiblingIndex();
+            return true;
+        }
+
         #region 최소화
         
         // 작업표시줄 쪽으로 작아지는 애니메이션 만들기 (살려줘)
         // 주의 : _curRectSize만큼 커지기
-        public void MinWindow()
+        public virtual void MinWindow()
         {
             if(_taskBarApplication == null) return;
             var pos = _taskBarApplication.GetPos(_canvas);
@@ -146,7 +165,7 @@ namespace SUNFISHH.Scripts
             gameObject.SetActive(false);
         }
 
-        public void RtnWindow()
+        public virtual void RtnWindow()
         {
             _isOpen = true;
             gameObject.SetActive(true);
@@ -156,7 +175,7 @@ namespace SUNFISHH.Scripts
         
         #region 전체화면
 
-        public void MaxWindow()
+        public virtual void MaxWindow()
         {
             _isMaxClick = !_isMaxClick;
             
@@ -209,7 +228,7 @@ namespace SUNFISHH.Scripts
         
         #region 창 열고 닫기
 
-        public void OpenWindow()
+        public virtual void OpenWindow()
         {
             if (_isOpen)
             {
@@ -234,7 +253,7 @@ namespace SUNFISHH.Scripts
             OnOpen();
         }
         
-        public void CloseWindow()
+        public virtual void CloseWindow()
         {
             if (!_isOpen) return;
             
@@ -259,5 +278,20 @@ namespace SUNFISHH.Scripts
             Gizmos.color = Color.red;
             Gizmos.DrawWireCube(dragTrs.position, dragSize);
         }*/
+        
+        public void OnBeginDrag(PointerEventData eventData)
+        {
+            CheckCanDrag(true);
+        }
+
+        public void OnDrag(PointerEventData eventData)
+        {
+            _dragMovementModule.UseModule();
+        }
+
+        public void OnEndDrag(PointerEventData eventData)
+        {
+            CheckCanDrag(false);
+        }
     }
 }
