@@ -10,7 +10,7 @@ namespace TYU.Script.Virtual_OS.GgaturiTok
         [SerializeField] private TextMeshProUGUI text;
         
         public float GetHeight() => myTrm.sizeDelta.y;
-        public virtual void Initialize(ReplyOption data)
+        public virtual void Initialize(MessageSO data, GgaturiTokController controller)
         {
             
         }
