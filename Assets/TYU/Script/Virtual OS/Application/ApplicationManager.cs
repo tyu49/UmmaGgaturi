@@ -9,6 +9,7 @@ namespace TYU.Script.Virtual_OS.Application
 {
     public class ApplicationManager : MonoSingleton<ApplicationManager>
     {
+        [SerializeField] private List<ApplicationSO> defaultApps;
         [SerializeField] private Canvas pointCanvas;
         [SerializeField] private Canvas applicationCanvas;
         [field : SerializeField] public Canvas WindowCanvas { get;private set; }
@@ -27,6 +28,8 @@ namespace TYU.Script.Virtual_OS.Application
             _points = _pointMaker.MakePositions(pointCanvas);
             appMover.Initialize(applicationCanvas);
             tBManager.Initialize();
+            foreach (var app in defaultApps)
+                TryMakeApplication(app);
         }
 
         public void TryMakeApplication(ApplicationSO data)
