@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 namespace SUNFISHH.Scripts.Player
 {
@@ -15,6 +16,11 @@ namespace SUNFISHH.Scripts.Player
         [SerializeField] private Vector2 _rangeOffset;
         private BoxCollider2D _curRange;
 
+        [Header("Change Range")]
+        [SerializeField] private LayerMask _windowLayer;
+        [SerializeField] private float _rangeSearchDistance;
+        
+
         private void Awake()
         {
             moveCompo = GetComponent<AgentMover>();
@@ -23,12 +29,11 @@ namespace SUNFISHH.Scripts.Player
 
         private void LateUpdate()
         {
-            ClampRange();
         }
 
-        private void ClampRange()
+        protected Vector2 ClampRange(Vector2 nextPos)
         {
-            Vector2 pos = new Vector2(transform.position.x + _rangeOffset.x, transform.position.y +  _rangeOffset.y);
+            Vector2 pos = nextPos;
             
             foreach (var range in _moveRange)
             {
@@ -36,20 +41,47 @@ namespace SUNFISHH.Scripts.Player
                 {
                     if(_curRange != null)
                     {
-                        if (!_curRange == range)
+                        if (_curRange != range)
                         {
                             // 현재 범위가 아니면
-                            Debug.Log($"범위안은 맞는데 현재 범위가 아님 {_curRange} != {range}");
                             continue;
                         }
                     }
-                    Debug.Log("범위가 존재하지 않음");
                     _curRange = range;
-                    return;
+                    return pos;
+                }
+                
+            }
+            
+            Bounds bounds = _curRange.bounds;
+
+            float left = bounds.min.x + _rangeOffset.x;
+            float right = bounds.max.x - _rangeOffset.x;
+            float bottom = bounds.min.y + _rangeOffset.y;
+            float top = bounds.max.y - _rangeOffset.y;
+
+            pos.x = left <= right ? Mathf.Clamp(pos.x, left, right) : bounds.center.x;
+            pos.y = bottom <= top ? Mathf.Clamp(pos.y, bottom, top) : bounds.center.y;
+
+            return pos;
+        }       
+
+        protected void TryChangeRange(Vector2 dir)
+        {
+            if (_curRange == null) return;
+
+            Vector2 origin = _curRange.transform.position;
+            RaycastHit2D[] hits = Physics2D.RaycastAll(origin, dir, _rangeSearchDistance, _windowLayer);
+            Debug.DrawRay(origin, dir * _rangeSearchDistance, Color.red, 0.3f);
+
+            foreach (var hit in hits)
+            {
+                if (hit.collider != _curRange)
+                {
+                    _curRange = hit.collider.gameObject.GetComponent<BoxCollider2D>();
                 }
             }
-            Vector2 clamp = _curRange.ClosestPoint(pos) - _rangeOffset;
-            transform.position = clamp;
+
         }
         
         /*public bool CheckRange(Vector2 nextMovePos)

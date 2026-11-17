@@ -1,4 +1,5 @@
 ﻿using PrimeTween;
+using SUNFISHH.Scripts;
 using TYU.Script.Virtual_OS.Application;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -17,8 +18,10 @@ namespace TYU.Script.Virtual_OS.TaskBar
         private RectTransform _rtTrm;
         private Camera _mainCam;
         private Vector3 _beforePos;
+        private AbstractWindow _myWindow;
+        private WindowLayerReplace _windowReplace;
         public ApplicationSO _myData { get; private set; }
-        public void Initialize(ApplicationSO data, TaskBarManager manager, Vector2 pos)
+        public void Initialize(ApplicationSO data, TaskBarManager manager, Vector2 pos, AbstractWindow window)
         {
             EventSystem.current.pixelDragThreshold = 1;
             _myData = data;
@@ -27,7 +30,9 @@ namespace TYU.Script.Virtual_OS.TaskBar
             _mainCam = Camera.main;
             _mover = _manager.AppMover;
             icon.sprite = data.Icon;
-            _rtTrm.anchoredPosition = pos;  
+            _rtTrm.anchoredPosition = pos;
+            _myWindow = window;
+            _windowReplace = _myWindow.GetComponent<WindowLayerReplace>();
         }
 
         public void MoveTo(float xPos)
@@ -54,7 +59,8 @@ namespace TYU.Script.Virtual_OS.TaskBar
 
         public void ClickApp()
         {
-            Debug.Log(1);
+            _myWindow.OpenWindow();
+            _windowReplace.Replace();
         }
         public void OnPointerUp(PointerEventData eventData)
         {
@@ -63,18 +69,12 @@ namespace TYU.Script.Virtual_OS.TaskBar
                 _mover.StopMove();
             }
         }
-
         public void OnPointerMove(PointerEventData eventData)
         {
             if(eventData.dragging)
                 _mover.StartMove(this, _beforePos);
         }
-
-        public void OnPointerClick(PointerEventData eventData)
-        {
-            ClickApp();
-        }
-
+        public void OnPointerClick(PointerEventData eventData) => ClickApp();
         public void OnPointerDown(PointerEventData eventData)
         {
             if(eventData.button == PointerEventData.InputButton.Left)

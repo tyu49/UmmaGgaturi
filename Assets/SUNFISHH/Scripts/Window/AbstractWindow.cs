@@ -15,6 +15,10 @@ namespace SUNFISHH.Scripts
         private Canvas _canvas;
         private TaskBarApplication _taskBarApplication;
         private bool _isOpen;
+        private bool _isMin;
+        
+        public bool IsOpen => _isOpen;
+        // protected RectTransform WindowRect => _rectTransform;
         
         [Header("Drag Settings")]
         // [SerializeField] private Vector2 dragSize;
@@ -29,6 +33,9 @@ namespace SUNFISHH.Scripts
         private Vector2 _srtSize;
         private Vector2 _curTransform;
         private Vector2 _curRectSize;
+        private Vector2 _minPos;
+        
+        protected virtual bool CanDrag => true;
         
         #region primeTween
         [SerializeField] private float duration = 0.05f;
@@ -56,17 +63,24 @@ namespace SUNFISHH.Scripts
         
         #endregion
 
+        public virtual void OnWindowUpdate() { }
+        public virtual void OnOpen() { }
+        public virtual void OnClose() { }
+        
+
         public void Init(TaskBarApplication taskBar)
         {
             _taskBarApplication = taskBar;
+            Setting();
         }
+        
 
         public void Commit(TaskBarApplication taskBar)
         {
             _taskBarApplication = taskBar;
         }
 
-        public void ReInit(TaskBarApplication taskBar)
+        protected virtual void Setting()
         {
             
         }
@@ -76,7 +90,7 @@ namespace SUNFISHH.Scripts
             _isOpen = value;
         }
         
-        private void Awake()
+        protected virtual void Awake()
         {
             _rectTransform = GetComponent<RectTransform>();
             _image = GetComponent<Image>();
@@ -89,13 +103,18 @@ namespace SUNFISHH.Scripts
 
         private void Update()
         {
-            if (Mouse.current.leftButton.wasPressedThisFrame)
-                CheckCanDrag(true);
+            if (CanDrag)
+            {
+                if (Mouse.current.leftButton.wasPressedThisFrame)
+                    CheckCanDrag(true);
 
-            if(Mouse.current.leftButton.wasReleasedThisFrame)
-                CheckCanDrag(false);
+                if (Mouse.current.leftButton.wasReleasedThisFrame)
+                    CheckCanDrag(false);
+
+                _dragMovementModule.UseModule();
+            }
             
-            _dragMovementModule.UseModule();
+            OnWindowUpdate();
         }
 
         private void CheckCanDrag(bool isClick)
@@ -106,7 +125,8 @@ namespace SUNFISHH.Scripts
                 return;
             }
             
-            if (RectTransformUtility.RectangleContainsScreenPoint(dragRange, Mouse.current.position.ReadValue()))
+            var cam = _canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : _canvas.worldCamera;
+            if (RectTransformUtility.RectangleContainsScreenPoint(dragRange, Mouse.current.position.ReadValue(), cam))
             {
                 _dragMovementModule.StartMove();
             }
@@ -121,12 +141,14 @@ namespace SUNFISHH.Scripts
         {
             if(_taskBarApplication == null) return;
             var pos = _taskBarApplication.GetPos(_canvas);
-                
+
+            _isOpen = false;
             gameObject.SetActive(false);
         }
 
         public void RtnWindow()
         {
+            _isOpen = true;
             gameObject.SetActive(true);
         }
 
@@ -189,6 +211,13 @@ namespace SUNFISHH.Scripts
 
         public void OpenWindow()
         {
+            if (_isOpen)
+            {
+                // transform.SetAsLastSibling();
+                return;
+            }
+            
+            _isOpen = true;
             gameObject.SetActive(true);
             _rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
             _rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
@@ -202,10 +231,14 @@ namespace SUNFISHH.Scripts
             openWinAlpha.endValue = 0f;
             
             Tween.UISizeDelta(_rectTransform, openWin);
+            OnOpen();
         }
         
         public void CloseWindow()
         {
+            if (!_isOpen) return;
+            
+            _isOpen = false;
             Vector2 curSize = _rectTransform.sizeDelta;
             
             closeWin.settings.duration = duration;
@@ -213,6 +246,9 @@ namespace SUNFISHH.Scripts
             closeWin.endValue = new Vector2(curSize.x /2, curSize.y /2);
 
             Tween.UISizeDelta(_rectTransform, closeWin).OnComplete(() => gameObject.SetActive(false));
+            
+            _rectTransform.position = Vector2.zero;
+            OnClose();
         }
 
         #endregion

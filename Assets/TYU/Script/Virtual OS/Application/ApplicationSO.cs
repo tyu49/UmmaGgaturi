@@ -9,13 +9,8 @@ namespace TYU.Script.Virtual_OS.Application
     {
         [field: SerializeField] public Sprite Icon { get; private set; }
         [field:SerializeField] public string Name { get; private set; }
-        [field:SerializeField] public GameObject Window { get; private set; }
+        [field:SerializeField] public AbstractWindow Window { get; private set; }
         [field: SerializeField] public bool LockInTaskBar { get; private set; }
 
-        private void OnValidate()
-        {
-            if (Window != null && !Window.TryGetComponent<AbstractWindow>(out var window))
-                Window = null;
-        }
     }
 }

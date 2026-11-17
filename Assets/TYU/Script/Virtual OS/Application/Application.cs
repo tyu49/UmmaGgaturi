@@ -19,7 +19,6 @@ namespace TYU.Script.Virtual_OS.Application
         [SerializeField] private Color clickColor;
         [SerializeField] private bool isNull;
         
-        
         private AppPoint _curPoint;
         private ApplicationManager _manager;
         private float _clickDelay = 0.6f;
@@ -49,6 +48,18 @@ namespace TYU.Script.Virtual_OS.Application
             // _myWindow = data.Window.GetComponent<AbstractWindow>();
             _manager.clickAction += ClickServer;
             EventSystem.current.pixelDragThreshold = 2;
+            if (myData.LockInTaskBar)
+                LockInTaskBar();
+        }
+
+        private void LockInTaskBar()
+        {
+            var window = Instantiate(myData.Window, _manager.WindowCanvas.transform);
+            _myWindow = window;
+            var tb = _manager.MakeTbApp(myData, _myWindow);
+            _myWindow.Init(tb);
+            _myWindow.gameObject.SetActive(false);
+            _openedOnce = true;
         }
 
         public void MouseEnter() => backGround.color = selectColor;
@@ -64,18 +75,20 @@ namespace TYU.Script.Virtual_OS.Application
             {
                 if (!_openedOnce)
                 {
-                    var tb = _manager.MakeTbAPp(myData);
-                    var go = Instantiate(myData.Window);
-                    _myWindow = go.GetComponent<AbstractWindow>();
+                    var window = Instantiate(myData.Window, _manager.WindowCanvas.transform);
+                    _myWindow = window;
+                    var tb = _manager.MakeTbApp(myData, _myWindow);
                     _myWindow.Init(tb);
                     _openedOnce = true;
                 }
                 if (!_manager.CheckTbApp(myData))
                 {
-                    var tb = _manager.MakeTbAPp(myData);
+                    var tb = _manager.MakeTbApp(myData, _myWindow);
                     _myWindow.Commit(tb);
                 }
+                _myWindow.OpenWindow();
             }
+            
             //이때 _myWindow에서 창 호출하는거 하면 됌
             _lastClickTime = Time.time;
         }

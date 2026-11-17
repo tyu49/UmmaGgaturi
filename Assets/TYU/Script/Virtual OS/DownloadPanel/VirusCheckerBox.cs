@@ -1,0 +1,45 @@
+﻿using System;
+using TYU.Script.Virtual_OS.Virus;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
+namespace TYU.Script.Virtual_OS.DownloadPanel
+{
+    public class VirusCheckerBox : MonoBehaviour, IPointerClickHandler
+    {
+        [SerializeField] private bool isVirusWhenActivate;
+        [SerializeField] private bool isVirusWhenDisable;
+        [SerializeField] private bool isEssential;
+        [SerializeField] private Image checkImage;
+        [SerializeField] private VirusEnum virusType;
+        public bool currentState { get; private set; } //true = 활성화, false = 비활성화
+        public event Action OnClicked;
+
+        private void Start()
+        {
+            ChangeState(currentState);
+        }
+
+        public VirusEnum GetVirusState()
+        {
+            if (isVirusWhenActivate && currentState)
+                return virusType;
+            return VirusEnum.None;
+        }
+        public bool EssentialCheck() => isEssential == currentState;
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            ChangeState(!currentState);
+            OnClicked?.Invoke();
+        }
+
+        public void ChangeState(bool stateValue)
+        {
+            currentState = stateValue;
+            checkImage.enabled = currentState;
+        }
+        
+        
+    }
+}

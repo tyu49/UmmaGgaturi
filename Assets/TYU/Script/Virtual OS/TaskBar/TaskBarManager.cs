@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using SUNFISHH.Scripts;
 using TYU.Script.Virtual_OS.Application;
 using UnityEngine;
 
@@ -18,11 +19,11 @@ namespace TYU.Script.Virtual_OS.TaskBar
             AppMover.Initialize(taskBarCanvas, this);
         }
         
-        public TaskBarApplication MakeNewApp(ApplicationSO data)
+        public TaskBarApplication MakeNewApp(ApplicationSO data, AbstractWindow window)
         {
             var go = Instantiate(appBase, transform);
             var tb = go.GetComponent<TaskBarApplication>();
-            tb.Initialize(data, this, new Vector2(_tBApps.Count * _baseWidth, 0f));
+            tb.Initialize(data, this, new Vector2(_tBApps.Count * _baseWidth, 0f), window);
             _appDict.TryAdd(data, tb);
             _tBApps.Add(tb);
             return tb;
