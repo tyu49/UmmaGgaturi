@@ -1,21 +1,27 @@
 ﻿using System;
+using TMPro;
 using UnityEngine;
 
 namespace TYU.Script.Virtual_OS.GgaturiTok
 {
     public class TokMessage : MonoBehaviour
     {
-        private RectTransform _myTrm;
-
-        private void Awake()
-        {
-            _myTrm = gameObject.GetComponent<RectTransform>();
-        }
-        public float GetHeight() => _myTrm.sizeDelta.y;
-
-        public virtual void GetData(ReplyOption data)
+        [SerializeField] private RectTransform myTrm;
+        [SerializeField] private TextMeshProUGUI text;
+        
+        public float GetHeight() => myTrm.sizeDelta.y;
+        public virtual void Initialize(ReplyOption data)
         {
             
+        }
+
+        [ContextMenu("Test")]
+        public virtual void Resize()
+        {
+            text.ForceMeshUpdate();
+            Vector2 textSize = text.GetRenderedValues();
+            textSize.y -= text.rectTransform.anchoredPosition.y;
+            myTrm.sizeDelta = new Vector2(myTrm.sizeDelta.x, textSize.y);
         }
     }
 }
