@@ -7,7 +7,15 @@ namespace TYU.Script.Virtual_OS.GgaturiTok
     public class MessageSO : ScriptableObject
     {
         [field: SerializeField] public string Text { get; private set; }
-        [field: SerializeField] public TokMessage Message { get; private set; }
-        // [field: SerializeField] public 
+        [field: SerializeField] public TokMessage MyMessage { get; private set; }
+        [field: SerializeField] public MessageSO NextMessage { get; private set; }
+        [field: SerializeField] public bool HasReplyOption { get; private set; }
+        [field: SerializeField] public MessageChoiceSO ReplyOption { get; private set; }
+
+        private void OnValidate()
+        {
+            if (!HasReplyOption && ReplyOption != null)
+                ReplyOption = null;
+        }
     }
 }
