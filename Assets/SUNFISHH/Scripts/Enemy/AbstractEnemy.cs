@@ -12,11 +12,9 @@ namespace SUNFISHH.Scripts.Enemy
         public EnemyDataSO Data => data;
 
         [Header("Window Range")]
-        [Tooltip("창 Range 콜라이더 레이어. 비워두면 'Range' 레이어 사용")]
         [SerializeField] private LayerMask rangeLayer;
 
         [Header("Scene Test")]
-        [Tooltip("스포너 없이 씬에 직접 배치했을 때 Start에서 자동 초기화")]
         [SerializeField] private bool initOnStart;
 
         public int Hp { get; private set; }
@@ -294,6 +292,8 @@ namespace SUNFISHH.Scripts.Enemy
             {
                 StateMachine.ChangeState(EnemyStateType.Hit);
             }
+            
+            Debug.Log($"{Data.EnemyName} HP -{damage}");
         }
         
         public void SetDespawnHandler(Action<AbstractEnemy> handler)

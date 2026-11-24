@@ -5029,6 +5029,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1809930575}
     m_Modifications:
+    - target: {fileID: 658368725128920582, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 658368725128920582, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 658368725128920582, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570407202549884889, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570407202549884889, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570407202549884889, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570407202549884889, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3065575154587050571, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
       propertyPath: m_Name
       value: Umma
@@ -5037,6 +5065,46 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 629323412}
+    - target: {fileID: 5484720710321493926, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5484720710321493926, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5484720710321493926, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5981063777148893440, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5981063777148893440, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5981063777148893440, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5981063777148893440, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973200676309881897, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973200676309881897, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973200676309881897, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7919410525187293534, guid: 16ccf36a39d5cc7479b76600f63129b6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5130,6 +5198,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1804852737}
     m_Modifications:
+    - target: {fileID: 1008079309178702657, guid: 1c80c935ca5f8784997379cadada13fe, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1861657032119315234, guid: 1c80c935ca5f8784997379cadada13fe, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
