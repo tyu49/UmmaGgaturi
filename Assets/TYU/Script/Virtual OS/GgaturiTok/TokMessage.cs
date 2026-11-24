@@ -17,8 +17,6 @@ namespace TYU.Script.Virtual_OS.GgaturiTok
             Controller = controller;
             text.SetText(data.Text);
         }
-
-        [ContextMenu("Test")]
         public virtual void Resize()
         {
             text.ForceMeshUpdate();

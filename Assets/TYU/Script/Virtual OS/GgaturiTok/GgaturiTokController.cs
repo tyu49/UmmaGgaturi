@@ -18,21 +18,24 @@ public class GgaturiTokController : AbstractWindow
     private float _defaultHeight;
     private RectTransform _areaRtTrm;
     
-    public event Action OnSizeChanged;
     private void Awake()
     {
         base.Awake();
+        OnStateChanged += ChangeMessageSize;
         _areaRtTrm = areaTrm as RectTransform;
         _defaultHeight = _areaRtTrm.sizeDelta.y;
+    }
+
+    private void OnDestroy()
+    {
+        OnStateChanged -= ChangeMessageSize;
     }
 
     private void Start()
     {
         PushNewMessage(firstMessage);
     }
-
-    [ContextMenu("Test")]
-    public void OnChangeMessage()
+    private void ChangeMessageSize()
     {
         LayoutRebuilder.ForceRebuildLayoutImmediate(_areaRtTrm);
         
@@ -43,7 +46,6 @@ public class GgaturiTokController : AbstractWindow
             height +=message.GetHeight();
         }
         _areaRtTrm.sizeDelta = new Vector2(0, Mathf.Max(_defaultHeight, height));
-        Debug.Log(height);
         LayoutRebuilder.ForceRebuildLayoutImmediate(_areaRtTrm);
     }
     public void PushNewMessage(MessageSO data)
@@ -59,18 +61,6 @@ public class GgaturiTokController : AbstractWindow
         {
             nwMsg.MakeNewEvent();
         }
-        OnChangeMessage();
+        ChangeMessageSize();
     }
-
-    [ContextMenu("Tsefdfs")]
-    public void TESdfs() => PushNewMessage(tsedsfs);
-    
-    /*
-     * 미래의 나를 위한 지금 생각하는 방향성
-     * 기본 메세지는 저기서 다시 PushNewMessage를 보내고
-     * 아닐경우 MakeNewEvent에서 싱글톤을 이용해서 특수 이벤트나 상황을 불러오는 식으로 갈듯?
-     * 선택지에선 sender에게 GiveData로 데이터를 보내고 선택을 하면 선택하는 애가
-     * 자기 SO를 다시 sender에게 보내주고 sender는 다시 그걸 Controller에게 보내고, 다시 거기서 PushNewMessage로 보내주고 그걸 반복하면 됌
-     * 이론상? 일단은 될 듯 ㅇㅇ
-     */
 }

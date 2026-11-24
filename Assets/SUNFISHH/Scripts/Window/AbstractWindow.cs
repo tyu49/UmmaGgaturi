@@ -63,10 +63,13 @@ namespace SUNFISHH.Scripts
         [SerializeField] private TweenSettings<float> closeWinAlpha;
         
         #endregion
+    
+        public event Action OnStateChanged;
 
         public virtual void OnWindowUpdate() { }
         public virtual void OnOpen() { }
         public virtual void OnClose() { }
+        
 
         private Camera _cam;
         
@@ -163,12 +166,14 @@ namespace SUNFISHH.Scripts
 
             _isOpen = false;
             gameObject.SetActive(false);
+            OnStateChanged?.Invoke();
         }
 
         public virtual void RtnWindow()
         {
             _isOpen = true;
             gameObject.SetActive(true);
+            OnStateChanged?.Invoke();
         }
 
         #endregion
@@ -199,7 +204,7 @@ namespace SUNFISHH.Scripts
                 Tween.UIAnchorMax(_rectTransform, openMax);
                 Tween.UIAnchorMin(_rectTransform, openMin);
                 Tween.UIAnchoredPosition(_rectTransform, openPos);
-                Tween.UISizeDelta(_rectTransform, openDelta);
+                Tween.UISizeDelta(_rectTransform, openDelta).OnComplete(() => OnStateChanged?.Invoke());;
             }
             else
             {
@@ -217,7 +222,7 @@ namespace SUNFISHH.Scripts
                 Tween.UIAnchorMax(_rectTransform, closeMax);
                 Tween.UIAnchorMin(_rectTransform, closeMin);
                 Tween.UIAnchoredPosition(_rectTransform, closePos);
-                Tween.UISizeDelta(_rectTransform, closeDelta);
+                Tween.UISizeDelta(_rectTransform, closeDelta).OnComplete(() => OnStateChanged?.Invoke());;
                 
                 dragRange.gameObject.SetActive(true);
             }
@@ -249,7 +254,7 @@ namespace SUNFISHH.Scripts
             openWinAlpha.startValue = _image.color.a;
             openWinAlpha.endValue = 0f;
             
-            Tween.UISizeDelta(_rectTransform, openWin);
+            Tween.UISizeDelta(_rectTransform, openWin).OnComplete(() => OnStateChanged?.Invoke());
             OnOpen();
         }
         
@@ -264,7 +269,11 @@ namespace SUNFISHH.Scripts
             closeWin.startValue = curSize;
             closeWin.endValue = new Vector2(curSize.x /2, curSize.y /2);
 
-            Tween.UISizeDelta(_rectTransform, closeWin).OnComplete(() => gameObject.SetActive(false));
+            Tween.UISizeDelta(_rectTransform, closeWin).OnComplete(() =>
+            {
+                gameObject.SetActive(false);
+                OnStateChanged?.Invoke();
+            });
             
             _rectTransform.position = Vector2.zero;
             OnClose();
