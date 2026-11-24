@@ -10,21 +10,24 @@ public class GgaturiTokController : AbstractWindow
 {
     [SerializeField] private Transform areaTrm;
     [SerializeField] private MessageSender sender;
+    [SerializeField] private MessageSO firstMessage;
+    [SerializeField] private MessageSO tsedsfs;
+    
     private List<TokMessage> _messagesList = new();
     private float _defaultHeight;
     private RectTransform _areaRtTrm;
+    
     public event Action OnSizeChanged;
     private void Awake()
     {
         base.Awake();
         _areaRtTrm = areaTrm as RectTransform;
         _defaultHeight = _areaRtTrm.sizeDelta.y;
+        PushNewMessage(firstMessage);
     }
     [ContextMenu("Test")]
     public void OnChangeMessage()
     {
-        _messagesList.Clear();
-        _messagesList = GetComponentsInChildren<TokMessage>().ToList();
         float height = 0;
         foreach (var message in _messagesList)
         {
@@ -37,6 +40,7 @@ public class GgaturiTokController : AbstractWindow
         }
         else
         {
+            Debug.Log(height);
             _areaRtTrm.sizeDelta = new Vector2(0, height);
         }
     }
@@ -44,13 +48,21 @@ public class GgaturiTokController : AbstractWindow
     {
         var nwMsg = Instantiate(data.MyMessage, areaTrm);
         nwMsg.Initialize(data, this);
+        _messagesList.Add(nwMsg);
         if (data.HasReplyOption)
         {
             sender.GiveData(data.ReplyOption);
-            return;
         }
-        nwMsg.MakeNewEvent();
+        else
+        {
+            nwMsg.MakeNewEvent();
+        }
+        OnChangeMessage();
     }
+
+    [ContextMenu("Tsefdfs")]
+    public void TESdfs() => PushNewMessage(tsedsfs);
+    
     /*
      * 미래의 나를 위한 지금 생각하는 방향성
      * 기본 메세지는 저기서 다시 PushNewMessage를 보내고

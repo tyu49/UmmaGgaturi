@@ -10,6 +10,7 @@ namespace TYU.Script.Virtual_OS.DownloadPanel
     {
         [SerializeField] protected List<VirusCheckerBox> checkers;
         [SerializeField] protected ApplicationSO downloadApp;
+        [SerializeField] protected VirusEnum VirusType;
         protected int _errorChecks;
         protected List<VirusEnum> _viruses;
         public event Action OnEssentialDidntCheck;

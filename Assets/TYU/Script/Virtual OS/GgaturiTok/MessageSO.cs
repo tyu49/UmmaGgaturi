@@ -11,6 +11,8 @@ namespace TYU.Script.Virtual_OS.GgaturiTok
         [field: SerializeField] public MessageSO NextMessage { get; private set; }
         [field: SerializeField] public bool HasReplyOption { get; private set; }
         [field: SerializeField] public MessageChoiceSO ReplyOption { get; private set; }
+        [field:SerializeField] public bool IsEndMessage { get; private set; }
+        [field:SerializeField] public GgaturiTokEvent MyEvent { get; private set; }
 
         private void OnValidate()
         {
