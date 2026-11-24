@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1034356f2648fba7a1410f5309eb1d, type: 3}
+  m_Name: Tsedsotpd
+  m_EditorClassIdentifier: Assembly-CSharp::TYU.Script.Virtual_OS.GgaturiTok.MessageSO
+  <Text>k__BackingField: taesfdsfwetesdfs
+  <MyMessage>k__BackingField: {fileID: 5623971054909769634, guid: fae68a41cd6ef374bbabf89f2607862c, type: 3}
+  <NextMessage>k__BackingField: {fileID: 0}
+  <HasReplyOption>k__BackingField: 1
+  <ReplyOption>k__BackingField: {fileID: 11400000, guid: b83b0eb141b4c164b9120ca3ba35c66e, type: 2}
+  <IsEndMessage>k__BackingField: 0
+  <MyEvent>k__BackingField: 0

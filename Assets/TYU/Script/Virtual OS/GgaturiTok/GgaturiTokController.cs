@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using SUNFISHH.Scripts;
+using TYU.Script;
 using TYU.Script.Virtual_OS.GgaturiTok;
 using TYU.Script.Virtual_OS.Virus;
 using UnityEngine;
@@ -29,11 +30,14 @@ public class GgaturiTokController : AbstractWindow
     private void OnDestroy()
     {
         OnStateChanged -= ChangeMessageSize;
+        EventBus<MessageChoosesData>.Unsubscribe(GetSenderMessage);
+        
     }
 
     private void Start()
     {
         PushNewMessage(firstMessage);
+        EventBus<MessageChoosesData>.Subscribe(GetSenderMessage);
     }
     private void ChangeMessageSize()
     {
@@ -47,6 +51,7 @@ public class GgaturiTokController : AbstractWindow
         }
         _areaRtTrm.sizeDelta = new Vector2(0, Mathf.Max(_defaultHeight, height));
         LayoutRebuilder.ForceRebuildLayoutImmediate(_areaRtTrm);
+        sender.ResizeOptions();
     }
     public void PushNewMessage(MessageSO data)
     {
@@ -63,4 +68,8 @@ public class GgaturiTokController : AbstractWindow
         }
         ChangeMessageSize();
     }
+    [ContextMenu("Tsetsdf")]
+    public void PushTest() => PushNewMessage(tsedsfs);
+
+    private void GetSenderMessage(MessageChoosesData data) => PushNewMessage(data.data);
 }
