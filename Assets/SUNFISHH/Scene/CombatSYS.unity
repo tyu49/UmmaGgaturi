@@ -584,246 +584,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SUNFISHH.Scripts.TestWindow
   dragRange: {fileID: 778594490}
   duration: 0.05
-  minWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  rtnWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openMax:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openMin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openPos:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openDelta:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeMax:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeMin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closePos:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeDelta:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
   openWinAlpha:
     startFromCurrent: 0
     startValue: 0
@@ -1337,7 +1097,7 @@ GameObject:
   - component: {fileID: 362049731}
   - component: {fileID: 362049734}
   m_Layer: 9
-  m_Name: Halappa
+  m_Name: HalBae
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1381,246 +1141,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SUNFISHH.Scripts.TestWindow
   dragRange: {fileID: 635279390}
   duration: 0.05
-  minWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  rtnWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openMax:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openMin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openPos:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openDelta:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeMax:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeMin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closePos:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeDelta:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
   openWinAlpha:
     startFromCurrent: 0
     startValue: 0
@@ -2478,19 +1998,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c94021475ddd44949b2c85d94871306e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SUNFISHH.Scripts.Player.Player
-  moveCompo: {fileID: 629323414}
-  renderCompo: {fileID: 377753057}
+  _rangeOffset: {x: 30, y: 30}
+  _followDur: 0.3
   _moveRange:
   - {fileID: 1793943042}
   - {fileID: 860264695}
   - {fileID: 1712836385}
   - {fileID: 649135943}
-  _rangeOffset: {x: 30, y: 30}
   _windowLayer:
     serializedVersion: 2
     m_Bits: 1024
   _rangeSearchDistance: 700
-  _followDur: 0.3
 --- !u!1 &635279389
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,6 +2932,67 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &969632189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 969632190}
+  - component: {fileID: 969632191}
+  m_Layer: 9
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &969632190
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969632189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1796745178}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &969632191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969632189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ffd6887552381489c69940652bdfa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SUNFISHH.Scripts.Enemy.EnemySpawner
+  enemies:
+  - prefab: {fileID: 4170558140205477966, guid: dd414aadb22d76545937d23cb2898687, type: 3}
+    weight: 1
+    prewarm: 10
+  windowRange: {fileID: 1793943042}
+  spawnParent: {fileID: 969632190}
+  target: {fileID: 629323412}
+  rangeLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  startCount: 1
+  maxCount: 3
+  spawnInterval: 3
 --- !u!1 &978712799
 GameObject:
   m_ObjectHideFlags: 0
@@ -4290,7 +3869,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HalAppa?
+  m_text: HalBae?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4428,246 +4007,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SUNFISHH.Scripts.TestWindow
   dragRange: {fileID: 449790975}
   duration: 0.05
-  minWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  rtnWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openMax:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openMin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openPos:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openDelta:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeMax:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeMin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closePos:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeDelta:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
   openWinAlpha:
     startFromCurrent: 0
     startValue: 0
@@ -6294,6 +5633,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 969632190}
   - {fileID: 311882692}
   - {fileID: 525360390}
   - {fileID: 1793943041}
@@ -6320,246 +5660,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SUNFISHH.Scripts.TestWindow
   dragRange: {fileID: 525360390}
   duration: 0.05
-  minWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  rtnWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openMax:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openMin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openPos:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openDelta:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeMax:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeMin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closePos:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeDelta:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
   openWinAlpha:
     startFromCurrent: 0
     startValue: 0
