@@ -8,30 +8,26 @@ namespace TYU.Script.Virtual_OS.Virus
     {
         [SerializeField] private List<AbstractVirus> viruses;
         
-        private Dictionary<VirusEnum, AbstractVirus> _virusDict;
-        private VirusEnum _havingViruses = VirusEnum.None;
-        private int _havingVirusCount = 0;
+        private Dictionary<VirusEnum, int> _virusDangerCount = new();
         
         private void Awake()
         {
-            _virusDict = new Dictionary<VirusEnum, AbstractVirus>();
             if (!MakeSingleton()) return;
-            foreach (var virus in viruses)
-                _virusDict.TryAdd(virus.type, virus);
+            foreach (VirusEnum type in Enum.GetValues(typeof(VirusEnum)))
+            {
+                _virusDangerCount.TryAdd(type, 0);
+            }
         }
 
-        public AbstractVirus GetVirus(VirusEnum type)
+        public void IncreaseVirusDanger(VirusEnum type)
         {
-            if (_virusDict.TryGetValue(type, out var virus)) return virus;
+            if (!_virusDangerCount.TryGetValue(type, out var virus)) return;
             Debug.LogError("이거 없데");
-            _havingViruses |= type;
-            _havingVirusCount++;
-            return null;
+            virus++;
         }
-        public int GetViruses(out VirusEnum havingVirus)
+        public int GetVirusDanger(VirusEnum type)
         {
-            havingVirus = _havingViruses;
-            return _havingVirusCount;
+            return _virusDangerCount.GetValueOrDefault(type, 0);
         }
     }
 }

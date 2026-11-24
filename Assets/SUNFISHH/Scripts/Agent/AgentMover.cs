@@ -5,5 +5,9 @@ namespace SUNFISHH.Scripts.Player
 {
     public class AgentMover : MonoBehaviour
     {
+        public void Move()
+        {
+            
+        }
     }
 }
