@@ -229,8 +229,7 @@ namespace SUNFISHH.Scripts.Enemy
             SetPosition(Vector2.MoveTowards(cur, dest, data.MoveSpeed * Time.deltaTime));
             return ((Vector2)transform.position - dest).sqrMagnitude <= arrive * arrive;
         }
-
-        // 바라볼 위치 쪽으로 AgentRenderer.Flip
+        
         public void FaceTo(Vector2 lookPos)
         {
             if (renderCompo == null) return;
@@ -324,8 +323,8 @@ namespace SUNFISHH.Scripts.Enemy
         public void AnimationActionTrigger() => StateMachine?.CurrentState.AnimationActionTrigger();
 
         #endregion
-
-        private void OnDrawGizmosSelected()
+        
+        private void OnDrawGizmos()
         {
             if (data == null) return;
             Gizmos.color = Color.red;
