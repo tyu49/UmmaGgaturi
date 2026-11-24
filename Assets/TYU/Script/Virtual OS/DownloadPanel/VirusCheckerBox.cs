@@ -18,7 +18,7 @@ namespace TYU.Script.Virtual_OS.DownloadPanel
 
         private void Start()
         {
-            ChangeState(currentState);
+            ChangeState(isEssential);
         }
 
         public VirusEnum GetVirusState()
@@ -30,6 +30,7 @@ namespace TYU.Script.Virtual_OS.DownloadPanel
         public bool EssentialCheck() => isEssential == currentState;
         public void OnPointerClick(PointerEventData eventData)
         {
+            if (isEssential) return;
             ChangeState(!currentState);
             OnClicked?.Invoke();
         }
