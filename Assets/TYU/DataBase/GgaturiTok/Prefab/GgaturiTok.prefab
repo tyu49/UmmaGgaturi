@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6785300481286558524}
   - component: {fileID: 2016170550744470677}
-  - component: {fileID: 6892987127454446319}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -32,11 +31,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2070597068757673798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 600}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2016170550744470677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,7 +53,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 7
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
@@ -63,19 +62,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
---- !u!114 &6892987127454446319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717847567864220909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec476b48ebc0345478270ecd7a7ed7dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GgaturiTokSizeController
-  _myTrm: {fileID: 6785300481286558524}
 --- !u!1 &835226368404173327
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,8 +320,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7948843687959476303}
-        m_TargetAssemblyTypeName: SUNFISHH.Scripts.TestWindow, Assembly-CSharp
+      - m_Target: {fileID: 465508300818781373}
+        m_TargetAssemblyTypeName: GgaturiTokController, Assembly-CSharp
         m_MethodName: MinWindow
         m_Mode: 1
         m_Arguments:
@@ -467,8 +453,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7948843687959476303}
-        m_TargetAssemblyTypeName: SUNFISHH.Scripts.TestWindow, Assembly-CSharp
+      - m_Target: {fileID: 465508300818781373}
+        m_TargetAssemblyTypeName: GgaturiTokController, Assembly-CSharp
         m_MethodName: CloseWindow
         m_Mode: 1
         m_Arguments:
@@ -509,11 +495,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 7744379594923907187}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90, y: 320}
-  m_SizeDelta: {x: 672.144, y: 60}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 60}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1892470612355604482
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,9 +648,10 @@ GameObject:
   - component: {fileID: 7744379594923907187}
   - component: {fileID: 379967069616403976}
   - component: {fileID: 4975134394213746701}
-  - component: {fileID: 7948843687959476303}
+  - component: {fileID: 465508300818781373}
+  - component: {fileID: 7019333508144703274}
   m_Layer: 5
-  m_Name: KkaturiTok
+  m_Name: GgaturiTok
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -687,6 +674,7 @@ RectTransform:
   - {fileID: 2547610463353557114}
   - {fileID: 5101494473030208428}
   - {fileID: 3803167863488664468}
+  - {fileID: 5714001746046282123}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -732,7 +720,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7948843687959476303
+--- !u!114 &465508300818781373
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -741,257 +729,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 3129134805638243027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d4c611ff085467d885d07eeeafccd6f, type: 3}
+  m_Script: {fileID: 11500000, guid: ec476b48ebc0345478270ecd7a7ed7dd, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SUNFISHH.Scripts.TestWindow
+  m_EditorClassIdentifier: Assembly-CSharp::GgaturiTokSizeController
   dragRange: {fileID: 4432835692898837714}
   duration: 0.05
-  minWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  rtnWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openMax:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openMin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openPos:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openDelta:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeMax:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeMin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closePos:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 0
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 0
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeDelta:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  openWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
-  closeWin:
-    startFromCurrent: 0
-    startValue: {x: 0, y: 0}
-    endValue: {x: 0, y: 0}
-    settings:
-      duration: 1
-      ease: 0
-      customEase:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      cycles: 1
-      cycleMode: 0
-      startDelay: 0
-      endDelay: 0
-      useUnscaledTime: 0
-      _useFixedUpdate: 0
-      _updateType: 0
   openWinAlpha:
     startFromCurrent: 0
     startValue: 0
     endValue: 0
     settings:
-      duration: 0
+      duration: 1
       ease: 0
       customEase:
         serializedVersion: 2
@@ -999,7 +747,7 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      cycles: 0
+      cycles: 1
       cycleMode: 0
       startDelay: 0
       endDelay: 0
@@ -1011,7 +759,7 @@ MonoBehaviour:
     startValue: 0
     endValue: 0
     settings:
-      duration: 0
+      duration: 1
       ease: 0
       customEase:
         serializedVersion: 2
@@ -1019,13 +767,29 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      cycles: 0
+      cycles: 1
       cycleMode: 0
       startDelay: 0
       endDelay: 0
       useUnscaledTime: 0
       _useFixedUpdate: 0
       _updateType: 0
+  areaTrm: {fileID: 6785300481286558524}
+  sender: {fileID: 5118813793930653539}
+  firstMessage: {fileID: 11400000, guid: 948d587c4ad904c40b85b2aa54f514a9, type: 2}
+  tsedsfs: {fileID: 0}
+--- !u!114 &7019333508144703274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3129134805638243027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdc649cf403eeb419b72a1b56a5f803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindowLayerReplace
 --- !u!1 &3975313633195176039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,7 +855,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1222,8 +986,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7948843687959476303}
-        m_TargetAssemblyTypeName: SUNFISHH.Scripts.TestWindow, Assembly-CSharp
+      - m_Target: {fileID: 465508300818781373}
+        m_TargetAssemblyTypeName: GgaturiTokController, Assembly-CSharp
         m_MethodName: MaxWindow
         m_Mode: 1
         m_Arguments:
@@ -1234,6 +998,228 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &4102303581534501461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5827330849271782343}
+  - component: {fileID: 2403573508582366387}
+  - component: {fileID: 3808817127981571200}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5827330849271782343
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4102303581534501461}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5714001746046282123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2403573508582366387
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4102303581534501461}
+  m_CullTransparentMesh: 1
+--- !u!114 &3808817127981571200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4102303581534501461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &4739320943149817015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5714001746046282123}
+  - component: {fileID: 3871272792421716540}
+  - component: {fileID: 3079928089875512874}
+  - component: {fileID: 7725400885324411844}
+  - component: {fileID: 5118813793930653539}
+  m_Layer: 5
+  m_Name: MessageSending
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5714001746046282123
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739320943149817015}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5827330849271782343}
+  m_Father: {fileID: 7744379594923907187}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 100.140015}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!222 &3871272792421716540
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739320943149817015}
+  m_CullTransparentMesh: 1
+--- !u!114 &3079928089875512874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739320943149817015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7725400885324411844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739320943149817015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 0
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 3079928089875512874}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: TYU.Script.TestLog, Assembly-CSharp
+        m_MethodName: TestLogSending
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5118813793930653539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739320943149817015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9752c0eefd5c4f55a3b787de9173cf6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TYU.Script.Virtual_OS.GgaturiTok.MessageSender
+  replyOptionPanel: {fileID: 0}
 --- !u!1 &5990208257217004980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,7 +1297,7 @@ GameObject:
   - component: {fileID: 115781595773617643}
   - component: {fileID: 5753019613817301480}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: ScrollArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1332,10 +1318,10 @@ RectTransform:
   - {fileID: 2070597068757673798}
   m_Father: {fileID: 7744379594923907187}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000071525574, y: -24}
-  m_SizeDelta: {x: 500, y: 600}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: 0, y: -300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3229806812519506216
 CanvasRenderer:
@@ -1358,14 +1344,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1

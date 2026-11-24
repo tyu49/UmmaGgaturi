@@ -110,3 +110,6 @@ InitTestScene*.unity*
 /Assets/Plugins/PrimeTween
 Packages/com.kyrylokuzyk.primetween.tgz
 ProjectSettings/Packages/com.unity.learn.iet-framework
+Packages/manifest.json
+Packages/manifest.json
+Packages/packages-lock.json

@@ -6,13 +6,16 @@ namespace TYU.Script.Virtual_OS.GgaturiTok
 {
     public class TokMessage : MonoBehaviour
     {
-        [SerializeField] private RectTransform myTrm;
-        [SerializeField] private TextMeshProUGUI text;
-        
+        [SerializeField] protected RectTransform myTrm;
+        [SerializeField] protected TextMeshProUGUI text;
+        protected GgaturiTokController Controller;
+        protected MessageSO MyData;
         public float GetHeight() => myTrm.sizeDelta.y;
-        public virtual void Initialize(ReplyOption data)
+        public virtual void Initialize(MessageSO data, GgaturiTokController controller)
         {
-            
+            MyData = data;
+            Controller = controller;
+            text.SetText(data.Text);
         }
 
         [ContextMenu("Test")]
@@ -22,6 +25,13 @@ namespace TYU.Script.Virtual_OS.GgaturiTok
             Vector2 textSize = text.GetRenderedValues();
             textSize.y -= text.rectTransform.anchoredPosition.y;
             myTrm.sizeDelta = new Vector2(myTrm.sizeDelta.x, textSize.y);
+        }
+
+        public virtual void MakeNewEvent()
+        {
+            if(!MyData.IsEndMessage)
+                Controller.PushNewMessage(MyData.NextMessage);
+            else IndividualEventBus<GgaturiTokEvent>.Publish(MyData.MyEvent);
         }
     }
 }

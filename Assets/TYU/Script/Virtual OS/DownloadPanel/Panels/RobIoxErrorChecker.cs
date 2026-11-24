@@ -10,9 +10,9 @@ namespace TYU.Script.Virtual_OS.DownloadPanel.Panels
             GetDataFromCheckers();
             foreach (var virus in _viruses)
             {
-                var _virus = VirusManager.Instance.GetVirus(virus);
-                _virus.KillHisComputer();
+                VirusManager.Instance.IncreaseVirusDanger(virus);
             }
+            IndividualEventBus<VirusEnum>.Publish(VirusEnum.MEMEZ);
             base.StartDownload();
             Destroy(gameObject);
         }
