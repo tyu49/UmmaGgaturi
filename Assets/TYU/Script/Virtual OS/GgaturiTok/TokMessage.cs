@@ -21,7 +21,8 @@ namespace TYU.Script.Virtual_OS.GgaturiTok
         [ContextMenu("Test")]
         public virtual void Resize()
         {
-            Vector2 textSize = text.GetPreferredValues(text.text);
+            text.ForceMeshUpdate();
+            Vector2 textSize = text.GetRenderedValues();
             textSize.y -= text.rectTransform.anchoredPosition.y;
             myTrm.sizeDelta = new Vector2(myTrm.sizeDelta.x, textSize.y);
         }

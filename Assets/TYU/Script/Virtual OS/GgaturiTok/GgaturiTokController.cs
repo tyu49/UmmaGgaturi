@@ -5,6 +5,7 @@ using SUNFISHH.Scripts;
 using TYU.Script.Virtual_OS.GgaturiTok;
 using TYU.Script.Virtual_OS.Virus;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GgaturiTokController : AbstractWindow
 {
@@ -23,26 +24,27 @@ public class GgaturiTokController : AbstractWindow
         base.Awake();
         _areaRtTrm = areaTrm as RectTransform;
         _defaultHeight = _areaRtTrm.sizeDelta.y;
+    }
+
+    private void Start()
+    {
         PushNewMessage(firstMessage);
     }
+
     [ContextMenu("Test")]
     public void OnChangeMessage()
     {
+        LayoutRebuilder.ForceRebuildLayoutImmediate(_areaRtTrm);
+        
         float height = 0;
         foreach (var message in _messagesList)
         {
             message.Resize();
             height +=message.GetHeight();
         }
-        if (height < _defaultHeight)
-        {
-            _areaRtTrm.sizeDelta = new Vector2(0, _defaultHeight);
-        }
-        else
-        {
-            Debug.Log(height);
-            _areaRtTrm.sizeDelta = new Vector2(0, height);
-        }
+        _areaRtTrm.sizeDelta = new Vector2(0, Mathf.Max(_defaultHeight, height));
+        Debug.Log(height);
+        LayoutRebuilder.ForceRebuildLayoutImmediate(_areaRtTrm);
     }
     public void PushNewMessage(MessageSO data)
     {

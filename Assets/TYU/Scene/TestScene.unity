@@ -1070,10 +1070,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 717847567864220909, guid: 7e4c925bcaad43f4099b438e6f2c6833, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1862084252}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e4c925bcaad43f4099b438e6f2c6833, type: 3}
 --- !u!224 &1582204678 stripped
 RectTransform:
@@ -1347,25 +1344,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1862084249 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 717847567864220909, guid: 7e4c925bcaad43f4099b438e6f2c6833, type: 3}
-  m_PrefabInstance: {fileID: 1582204677}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1862084252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862084249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
-  m_HorizontalFit: 0
-  m_VerticalFit: 1
 --- !u!224 &1903030355 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8627733609214804712, guid: 0be7d9d73c9bc5d4487efd32baccc081, type: 3}
