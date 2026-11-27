@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d1034356f2648fba7a1410f5309eb1d, type: 3}
-  m_Name: Tsedsotpd
+  m_Name: RobIox
   m_EditorClassIdentifier: Assembly-CSharp::TYU.Script.Virtual_OS.GgaturiTok.MessageSO
-  <Text>k__BackingField: taesfdsfwetesdfs
-  <MyMessage>k__BackingField: {fileID: 5623971054909769634, guid: fae68a41cd6ef374bbabf89f2607862c, type: 3}
+  <Text>k__BackingField: 
+  <MyMessage>k__BackingField: {fileID: 6563106166799492340, guid: 490736b07624a2c4da755d02e966f7d1, type: 3}
   <NextMessage>k__BackingField: {fileID: 0}
   <HasReplyOption>k__BackingField: 1
   <ReplyOption>k__BackingField: {fileID: 11400000, guid: b83b0eb141b4c164b9120ca3ba35c66e, type: 2}

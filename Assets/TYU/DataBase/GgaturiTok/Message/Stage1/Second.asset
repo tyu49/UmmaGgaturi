@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TYU.Script.Virtual_OS.GgaturiTok.MessageSO
   <Text>k__BackingField: taesfdsfwetesdfstaesfdsfwetesdfstaesfdsfwetesdfstaesfdsfwetesdfstaesfdsfwetesdfstaesfdsfwetesdfstaesfdsfwetesdfstaesfdsfwetesdfstaesfdsfwetesdfstaesfdsfwetesdfstaesfdsfwetesdfstaesfdsfwetesdfs
   <MyMessage>k__BackingField: {fileID: 5623971054909769634, guid: fae68a41cd6ef374bbabf89f2607862c, type: 3}
-  <NextMessage>k__BackingField: {fileID: 0}
+  <NextMessage>k__BackingField: {fileID: 11400000, guid: 627a2dc7e22342b4d9507c5597b231fd, type: 2}
   <HasReplyOption>k__BackingField: 0
   <ReplyOption>k__BackingField: {fileID: 0}
-  <IsEndMessage>k__BackingField: 1
+  <IsEndMessage>k__BackingField: 0
   <MyEvent>k__BackingField: 0

@@ -23,6 +23,7 @@ namespace SUNFISHH.Scripts.Player
             Move();
             KeyBoardValue();
         }
+        
 
         protected override void Move()
         {

@@ -15,7 +15,7 @@ namespace SUNFISHH.Scripts
         [Header("Window Settings")] 
         private Canvas _canvas;
         private TaskBarApplication _taskBarApplication;
-        private bool _isOpen;
+        protected bool _isOpen;
         private bool _isMin;
         
         public bool IsOpen => _isOpen;
@@ -68,7 +68,12 @@ namespace SUNFISHH.Scripts
 
         public virtual void OnWindowUpdate() { }
         public virtual void OnOpen() { }
-        public virtual void OnClose() { }
+
+        public virtual void OnClose()
+        {
+            if(_taskBarApplication == null) return;
+            _taskBarApplication.RemoveApp();
+        }
         
 
         private Camera _cam;

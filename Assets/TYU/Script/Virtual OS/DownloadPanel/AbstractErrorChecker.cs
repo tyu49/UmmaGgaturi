@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using SUNFISHH.Scripts;
 using TYU.Script.Virtual_OS.Application;
 using TYU.Script.Virtual_OS.Virus;
 using UnityEngine;
 
 namespace TYU.Script.Virtual_OS.DownloadPanel
 {
-    public abstract class AbstractErrorChecker : MonoBehaviour
+    public abstract class AbstractErrorChecker : AbstractWindow
     {
         [SerializeField] protected List<VirusCheckerBox> checkers;
         [SerializeField] protected ApplicationSO downloadApp;

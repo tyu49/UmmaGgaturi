@@ -8,7 +8,7 @@ namespace TYU.Script.Virtual_OS.Virus
     {
         [SerializeField] private List<AbstractVirus> viruses;
         
-        private Dictionary<VirusEnum, int> _virusDangerCount = new();
+        private Dictionary<VirusEnum, float> _virusDangerCount = new();
         
         private void Awake()
         {
@@ -22,12 +22,11 @@ namespace TYU.Script.Virtual_OS.Virus
         public void IncreaseVirusDanger(VirusEnum type)
         {
             if (!_virusDangerCount.TryGetValue(type, out var virus)) return;
-            Debug.LogError("이거 없데");
-            virus++;
+            virus+=15;
         }
-        public int GetVirusDanger(VirusEnum type)
+        public float GetVirusDanger(VirusEnum type)
         {
-            return _virusDangerCount.GetValueOrDefault(type, 0);
+            return _virusDangerCount.GetValueOrDefault(type, 0f);
         }
     }
 }

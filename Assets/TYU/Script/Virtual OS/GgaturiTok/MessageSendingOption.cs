@@ -29,13 +29,13 @@ namespace TYU.Script.Virtual_OS.GgaturiTok
             Vector2 textSize = text.GetRenderedValues();
             _myTrm.sizeDelta = new Vector2(_myTrm.sizeDelta.x, textSize.y);
         }
-
+    
         public void Choose()
         {
             EventBus<MessageChoosesData>.Publish(new MessageChoosesData()
             {
                 data = _myData
-            });
+            }); 
         }
     }
 }

@@ -45,7 +45,6 @@ namespace TYU.Script.Virtual_OS.Application
             gameObject.name = data.Name;
             point.Put(this);
             _curPoint = point;
-            // _myWindow = data.Window.GetComponent<AbstractWindow>();
             _manager.clickAction += ClickServer;
             EventSystem.current.pixelDragThreshold = 2;
             if (myData.LockInTaskBar)
@@ -65,9 +64,6 @@ namespace TYU.Script.Virtual_OS.Application
         public void MouseEnter() => backGround.color = selectColor;
         public void MouseExit() => backGround.color = _isClicked ? clickColor : new Color(1, 1, 1, 0);
         
-        // public void StartMove() => _mover.StartMove(this);
-        // public void EndMove() => _mover.TryMove();
-
         public void ClickAction()
         {
             if (myData == null) return;
